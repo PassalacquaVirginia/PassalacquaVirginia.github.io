@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz a Scelta Multipla</title>
+  <link rel="stylesheet" href="quiz_style.css">
+</head>
+<body>
+  <div class="content">
+    <h1>Quiz a Scelta Multipla</h1>
+
+    <div id="quiz-container"></div>
+
+    <button onclick="checkAllAnswers()">Verifica Tutto</button>
+    <div id="score"></div>
+  </div>
+
+  <script>
+
+    const quizData = [
+      {
+        question: "In che modo possiamo esprimere i vincoli (cioè le constraint) in un diagramma delle classi UML?",
+        answers: [
+          "Le specifiche UML non danno informazioni in merito; l'unica regola è indicare i vincoli tra parentesi tonde",
+          "Non serve un modo esplicito per aggiungere vincoli aggiuntivi: tutti i vincoli si possono esprimere mediante associazioni, attributi e generalizzazione",
+          "Indicandoli tra parentesi graffe attraverso il linguaggio naturale, un linguaggio di programmazione o OCL (Object Constraint Language)",
+          "Unicamente utilizzando il linguaggio OCL (Object Constraint Language)"
+        ],
+        correct: 3
+      },
+      {
+        question: "Cosa indica un alto Fan-out tra moduli (o componenti) di un sistema software?",
+        answers: [
+          "Indica un buon riuso",
+          "Indica violazione dell'Information Hiding",
+          "Indica alto accoppiamento (Content coupling) tra moduli",
+          "Indica eccessiva dipendenza tra moduli e che il modulo andrebbe decomposto"
+        ],
+        correct: 4
+      },
+      {
+        question: "Quale tra le seguenti affermazioni relative ai diagrammi di sequenza (sequence diagram) è vera?",
+        answers: [
+          "Ogni linea di vita rappresenta un metodo",
+          "Si tratta di un tipo di diagramma usato per modellare aspetti statici",
+          "Un messaggio di tipo \"trovato\" descrive un metodo che effettua una ricerca di elementi in una collezione",
+          "Un messaggio `m()` da un oggetto di classe A a un oggetto di classe B implica che `m()` sia un'operazione della classe B"
+        ],
+        correct: 4
+      },
+      {
+        question: "Nel contesto dello stile architetturale a micro-servizi, quale è la funzione dell'API Gateway?",
+        answers: [
+          "Permette la comunicazione punto a punto dei vari micro-servizi che costituiscono il sistema SW",
+          "Permette la comunicazione tra i micro-servizi e il DB centrale del sistema SW",
+          "È una sorta di Observer che vigila sul corretto funzionamento del sistema SW composto da diversi nodi"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale tra le seguenti affermazioni in merito al software testing è errata/falsa?",
+        answers: [
+          "Il black box testing è una tecnica particolarmente indicata per testare il software a livello di sistema",
+          "Il criterio di copertura \"All Paths coverage\" può generare cammini infeasible",
+          "La bontà di una test suite si misura esclusivamente in base al numero di fault trovati nel codice che essa testa",
+          "Applicando Equivalence Partitioning nel modo classico su un range di valori [0, 100] si ottengono tre classi di equivalenza"
+        ],
+        correct: 3
+      },
+      {
+        question: "Di solito usare componenti SW a grana grossa in un sistema SW:",
+        answers: [
+          "Migliora la performance ma riduce la maintainability",
+          "Migliora performance e maintainability",
+          "Migliora la maintainability",
+          "Riduce la performance"
+        ],
+        correct: 3
+      },
+      {
+        question: "In base al class diagram 'Rubrica e Contatto', quale sequence diagram è corretto per modellare la creazione di un nuovo contatto in rubrica e l'inserimento del relativo numero di telefono?",
+        answers: [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        correct: 1
+      },
+      {
+        question: "Che cosa è l'OMG?",
+        answers: [
+          "Un consorzio di aziende avente l'obiettivo di creare standard come UML e XMI",
+          "Un’azienda nota per i report sui progetti di project management",
+          "Una delle più grandi produttrici di software al mondo per fatturato",
+          "Un consorzio di aziende USA e Canada che ha creato standard nel software testing"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale opzione è più indicata per un Project Manager con un team di tre sviluppatori per un sistema SW medicale safety-critical con requisiti instabili?",
+        answers: [
+          "Applicare un metodo di sviluppo prescrittivo con molte milestone e code review frequenti",
+          "Applicare Extreme Programming",
+          "Utilizzare un metodo di sviluppo bilanciato tra agilità e disciplina",
+          "Seguire le prescrizioni date nel metodo di sviluppo denominato Unified Process"
+        ],
+        correct: 3
+      },
+      {
+        question: "Quali tra i seguenti fattori sono considerati tra i principali rischi durante lo sviluppo di un progetto software?",
+        answers: [
+          "Cambiamenti frequenti nella tecnologia adottata",
+          "Mancanza di una visione chiara dei requisiti da parte del cliente",
+          "Sovrastima delle capacità del team",
+          "Eccessiva documentazione senza automatismi di aggiornamento"
+        ],
+        correct: 2
+      },
+      {
+        question: "Secondo Fred Brooks, quale aspetto rappresenta il \"silver bullet\" nello sviluppo software?",
+        answers: [
+          "L'adozione di una metodologia agile su larga scala efficace (es. DevOps)",
+          "L'uso di strumenti CASE avanzati",
+          "Non esiste il \"silver bullet\" nello sviluppo software",
+          "La completa automazione del testing"
+        ],
+        correct: 3
+      },
+      {
+        question: "Che cosa rappresenta il concetto di debito tecnico nello sviluppo software?",
+        answers: [
+          "Un costo monetario aggiuntivo per utilizzare strumenti di terze parti",
+          "Una situazione in cui il codice ha problemi strutturali che potrebbero causare costi futuri per correzioni e manutenzione",
+          "L'accumulo di errori runtime durante l'integrazione di più moduli",
+          "Una tecnica di sviluppo per simulare sistemi finanziari nei software"
+        ],
+        correct: 2
+      },
+      {
+        question: "Cosa si intende con code smell?",
+        answers: [
+          "È un errore del codice che ne impedisce la compilazione o l'esecuzione",
+          "È un'indicazione di una caratteristica nascosta del codice che potrebbe causare futuri problemi",
+          "È un design pattern specifico per la gestione della leggibilità e manutenibilità del codice",
+          "È una funzionalità presente nei principali debugger per trovare problemi nel codice"
+        ],
+        correct: 2
+      },
+      {
+        question: "Quale tra le seguenti affermazioni relativamente al framework JUnit 5 è falsa?",
+        answers: [
+          "Consente l'uso di annotazioni per personalizzare i test",
+          "Supporta test parametrizzati per verificare scenari multipli",
+          "Richiede necessariamente l'estensione della classe TestCase",
+          "Permette di rilevare errori a runtime oltre a problemi su asserzioni"
+        ],
+        correct: 3
+      },
+      {
+        question: "Nel contesto del pattern architetturale MVC, quale affermazione descrive meglio la responsabilità del Controller?",
+        answers: [
+          "Si occupa di aggiornare il Model e la View",
+          "Si occupa di visualizzare i dati provenienti dal Model",
+          "Si occupa di gestire i dati del Model e aggiornarli nel Database",
+          "Si occupa di controllare la visualizzazione di widget e dati nella View"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quali attività compongono il processo di Requirements Engineering?",
+        answers: [
+          "Elicitation, Analysis, Specification, Validation, Management",
+          "Elaboration, Specification, Testing, Documentation",
+          "Extraction, Analysis, Specification, Testing, Management",
+          "Elicitation, Elaboration, Specification, Validation, Documentation"
+        ],
+        correct: 1
+      },
+      {
+        question: "Gli Screen mockup sono di solito utilizzati per:",
+        answers: [
+          "Chiarire il comportamento di alcuni passi mediante un disegno/abbozzo della GUI negli use case",
+          "Specificare quale sarà l’effettiva GUI del sistema una volta realizzato",
+          "Differenziare i requisiti utente da quelli di sistema",
+          "Chiarire il ruolo degli attori negli use case diagram"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale stile architetturale è più adatto per un sistema gestionale con GUI?",
+        answers: [
+          "Pipe and Filter",
+          "Stratificato (Layered)",
+          "Manager Model",
+          "Client-Server"
+        ],
+        correct: 2
+      },
+      {
+        question: "Quale libro di Ingegneria del Software consiglieresti?",
+        answers: [
+          "Ian Sommerville",
+          "Martin Fowler",
+          "Kent Beck",
+          "Erich Gamma"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale macro-categoria di tecniche di testing è considerata la più efficace in ambito industriale?",
+        answers: [
+          "Il black-box testing, perché può essere usato indipendentemente dalla tecnologia utilizzata",
+          "Il white-box testing, perché consente l'analisi del codice sorgente e migliora sicurezza e qualità",
+          "Dipende da vari fattori, ma spesso il testing funzionale trova più fault rispetto al testing strutturale",
+          "Il black-box testing, perché può essere usato per Unit, Integration e System testing"
+        ],
+        correct: 3
+      },
+      {
+        question: "Secondo Fred Brooks, qual è la sfida più difficile durante lo sviluppo di un sistema software?",
+        answers: [
+          "Progettare un design Platform Independent adatto al problema da risolvere",
+          "Correggere i difetti durante la fase di Testing",
+          "Decidere cosa realizzare",
+          "Scegliere la tecnologia (piattaforma, linguaggio, frameworks) più adatta per lo sviluppo"
+        ],
+        correct: 3
+      },
+      {
+        question: "Che cosa è un mock object o uno stub nel contesto del software testing?",
+        answers: [
+          "Un oggetto reale utilizzato per eseguire test di integrazione",
+          "Un oggetto simulato che verifica le interazioni tra componenti",
+          "Un oggetto che sostituisce un componente reale con risultati randomici",
+          "Un componente che simula guasti hardware durante i test di resilienza"
+        ],
+        correct: 2
+      },
+      {
+        question: "Quale dei seguenti Design Pattern viene utilizzato all’interno del pattern architetturale MVC?",
+        answers: [
+          "Observer Design Pattern",
+          "Factory Design Pattern",
+          "State Design Pattern",
+          "Strategy Design Pattern"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale tra le seguenti istruzioni Java è ERRATA se ClassB eredita da ClassA?",
+        answers: [
+          "`ClassA b = new ClassA();`",
+          "`ClassB a = new ClassB();`",
+          "`ClassA a = new ClassB();`",
+          "`ClassB b = new ClassA();`"
+        ],
+        correct: 4
+      },
+      {
+        question: "In un sistema basato su microservizi, quale dei seguenti è un vantaggio principale?",
+        answers: [
+          "Facilità di scalabilità indipendente dei servizi",
+          "Aumento della dipendenza tra i componenti",
+          "Minore complessità di distribuzione di messaggi tra le varie componenti software",
+          "Utilizzo di un unico linguaggio di programmazione per tutti i microservizi"
+        ],
+        correct: 1
+      },
+      {
+        question: "Qual è il primo passo nella creazione di un nuovo sistema software?",
+        answers: [
+          "Creare una matrice di tracciabilità",
+          "Identificare/comprendere i requisiti degli stakeholder e stabilire i limiti del sistema",
+          "Definire i requisiti funzionali e analizzare la loro fattibilità",
+          "Scrivere i casi d'uso"
+        ],
+        correct: 2
+      },
+      {
+        question: "Quale dei seguenti diagrammi UML è più appropriato per rappresentare la distribuzione fisica dei componenti di un sistema software?",
+        answers: [
+          "Class diagram",
+          "Deployment diagram",
+          "Activity diagram",
+          "Component Diagram"
+        ],
+        correct: 2
+      },
+      {
+        question: "Quale dei seguenti è un vantaggio dell'uso del principio di incapsulamento nelle classi?",
+        answers: [
+          "Permette di nascondere i dettagli dell'implementazione",
+          "Aumenta la complessità ciclomatica del codice",
+          "Elimina la necessità di utilizzare l'ereditarietà",
+          "Riduce il numero di classi necessarie"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale dei seguenti modelli di sviluppo software enfatizza un approccio sequenziale a fasi senza iterazioni?",
+        answers: [
+          "Modello a cascata",
+          "Modello a spirale",
+          "Modello Incrementale",
+          "Modello a cascata con feedback e iterazioni"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale dei seguenti metodi di persistenza permette di salvare e successivamente ricreare uno stato identico di un oggetto?",
+        answers: [
+          "Mapping Object-Relational",
+          "DAO (Data Access Object)",
+          "Serializzazione",
+          "Uso di framework di persistenza"
+        ],
+        correct: 3
+      },
+      {
+        question: "Che cosa è lo STANDISH GROUP?",
+        answers: [
+          "Un'azienda conosciuta per i report riguardanti i progetti (project management)",
+          "Un consorzio di aziende che ha creato lo standard ISO/IEC/IEEE 29119 Software Testing",
+          "Un consorzio creato nel 1989 con l'obiettivo di analizzare il successo e il fallimento dei progetti software",
+          "Una delle più grandi aziende di software per fatturato"
+        ],
+        correct: 3
+      },
+      {
+        question: "Perché l'Ariane V è esploso in volo nel suo viaggio inaugurale?",
+        answers: [
+          "A causa di una collisione con un asteroide",
+          "A causa di un errore hardware nel sistema di controllo del razzo",
+          "Per un \"arithmetic overflow\" (tentativo di memorizzare un valore floating point a 64-bit in un intero a 16-bit)",
+          "Per una condizione anomala nella gestione dei thread di esecuzione"
+        ],
+        correct: 3
+      },
+      {
+        question: "Quale tra queste descrizioni si avvicina di più alla definizione di regression testing?",
+        answers: [
+          "Un tipo di test che verifica il trasferimento dei dati tra moduli",
+          "Un tipo di testing che verifica il corretto funzionamento dopo modifiche o correzioni",
+          "Un test per determinare se il software soddisfa i requisiti prestazionali",
+          "Parte del performance testing che aumenta il carico sul sistema"
+        ],
+        correct: 2
+      },
+      {
+        question: "Qual è lo scopo principale di un diagramma delle componenti UML?",
+        answers: [
+          "Modellare il flusso di controllo all'interno di un sistema software",
+          "Mostrare le componenti software e le loro relazioni/dipendenze",
+          "Modellare le classi OO che costituiscono il sistema",
+          "Specificare la struttura modulare del sistema"
+        ],
+        correct: 2
+      },
+      {
+        question: "Nel contesto di uno Use Case Diagram UML, quale relazione può essere applicata sia tra attori che tra casi d'uso?",
+        answers: [
+          "Uso",
+          "Inclusione",
+          "Generalizzazione",
+          "Estensione"
+        ],
+        correct: 3
+      },
+      {
+        question: "Dato il metodo `public void withdraw(double amount) { ... }`, quale specifica By Contract (pre o post-condizioni) è più corretta?",
+        answers: [
+          "`@pre amount > 0 e @post balance = balance - amount`",
+          "`@pre amount > 0 e @post balance = balance@pre - amount`",
+          "`@post balance = balance@pre - amount`",
+          "`@pre amount > 0 e @post = TRUE`"
+        ],
+        correct: 2
+      },
+      {
+        question: "In Extreme Programming, quale indicatore viene usato per misurare il progresso nello sviluppo software?",
+        answers: [
+          "La percentuale di User Stories implementate",
+          "La percentuale di casi di test di unità superati",
+          "Non viene usato nessun indicatore perché è un metodo agile",
+          "La percentuale di casi di test di accettazione superati"
+        ],
+        correct: 2
+      },
+      {
+        question: "Cosa significa prioritizzazione dei requisiti?",
+        answers: [
+          "Scrivere casi di test basati sui requisiti",
+          "Dare un ordine ai requisiti per decidere quali implementare",
+          "Analizzare i requisiti per stabilirne fattibilità e correttezza",
+          "Suddividere i requisiti in necessari, desiderabili e possibili"
+        ],
+        correct: 2
+      },
+      {
+        question: "Quale design pattern prenderesti in considerazione per un sistema di broadcasting?",
+        answers: [
+          "Observer Design Pattern",
+          "Facade Design Pattern",
+          "State Design Pattern",
+          "Template Method Design Pattern"
+        ],
+        correct: 1
+      },
+      {
+        question: "Quale affermazione sul processo di sviluppo UP (Unified Process) è corretta?",
+        answers: [
+          "Lo UP è un metodo di sviluppo agile",
+          "Lo UP parte dall'alto e non considera il concetto di rischio",
+          "Lo UP è \"Use-case driven\", \"Architecture centric\", iterativo e incrementale",
+          "Lo UP concentra gran parte delle sue attività sulla fase di implementazione"
+        ],
+        correct: 3
+      }
+    ];
+
+    function generateQuiz() {
+      const container = document.getElementById("quiz-container");
+      quizData.forEach((q, index) => {
+        const div = document.createElement("div");
+        div.className = "question";
+        div.dataset.correct = q.correct;
+
+        let html = `<p>${index + 1}. ${q.question}</p>`;
+        q.answers.forEach((ans, i) => {
+          html += `<label><input type="radio" name="q${index + 1}" value="${i + 1}"> ${ans}</label><br>`;
+        });
+        html += `<button onclick="checkAnswer(this)">Verifica</button><div class="result"></div>`;
+        div.innerHTML = html;
+        container.appendChild(div);
+      });
+    }
+
+    function checkAnswer(button) {
+      const questionDiv = button.parentElement;
+      const correctValue = questionDiv.dataset.correct;
+      const selected = questionDiv.querySelector('input[type="radio"]:checked');
+      const resultDiv = questionDiv.querySelector('.result');
+
+      // Rimuove eventuali colori precedenti
+      const labels = questionDiv.querySelectorAll('label');
+      labels.forEach(label => {
+        label.classList.remove('correct-answer', 'incorrect-answer');
+      });
+
+      if (!selected) {
+        resultDiv.textContent = 'Seleziona una risposta!';
+        resultDiv.className = 'result incorrect';
+        return;
+      }
+
+      const selectedLabel = selected.parentElement;
+
+      if (selected.value === correctValue) {
+        resultDiv.textContent = 'Risposta corretta!';
+        resultDiv.className = 'result correct';
+        selectedLabel.classList.add('correct-answer');
+      } else {
+        resultDiv.textContent = 'Risposta sbagliata.';
+        resultDiv.className = 'result incorrect';
+        selectedLabel.classList.add('incorrect-answer');
+      }
+    }
+
+    function checkAllAnswers() {
+      const questions = document.querySelectorAll('.question');
+      let score = 0;
+      questions.forEach(q => {
+        const correctValue = q.dataset.correct;
+        const selected = q.querySelector('input[type="radio"]:checked');
+        const resultDiv = q.querySelector('.result');
+
+        // Rimuove eventuali colori precedenti
+        const labels = q.querySelectorAll('label');
+        labels.forEach(label => {
+          label.classList.remove('correct-answer', 'incorrect-answer');
+        });
+
+        if (selected && selected.value === correctValue) {
+          resultDiv.textContent = 'Risposta corretta!';
+          resultDiv.className = 'result correct';
+          selected.parentElement.classList.add('correct-answer');
+          score++;
+        } else if (selected) {
+          resultDiv.textContent = 'Risposta sbagliata.';
+          resultDiv.className = 'result incorrect';
+          selected.parentElement.classList.add('incorrect-answer');
+        } else {
+          resultDiv.textContent = 'Nessuna risposta selezionata!';
+          resultDiv.className = 'result incorrect';
+        }
+      });
+      document.getElementById('score').innerHTML = `<h2>Punteggio: ${score} / ${questions.length}</h2>`;
+    }
+
+    generateQuiz();
+  </script>
+</body>
+</html>
