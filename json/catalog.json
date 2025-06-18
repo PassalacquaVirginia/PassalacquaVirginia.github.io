@@ -1,0 +1,2579 @@
+[
+  {
+    "question": "In che modo possiamo esprimere i vincoli (cioè le constraint) in un diagramma delle classi UML?",
+    "answers": [
+      "Le specifiche UML non danno informazioni in merito; l'unica regola è indicare i vincoli tra parentesi tonde",
+      "Indicandoli tra parentesi graffe attraverso il linguaggio naturale, un linguaggio di programmazione o OCL (Object Constraint Language)",
+      "Non serve un modo esplicito per aggiungere vincoli aggiuntivi: tutti i vincoli si possono esprimere mediante associazioni, attributi e generalizzazione",
+      "Unicamente utilizzando il linguaggio OCL (Object Constraint Language)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa indica un alto Fan-out tra moduli (o componenti) di un sistema software?",
+    "answers": [
+      "Indica buon riuso",
+      "Indica eccessiva dipendenza tra moduli e che il modulo andrebbe decomposto",
+      "Indica alto accoppiamento (Content coupling) tra moduli",
+      "Indica violazione dell'Information Hiding"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni relative ai diagrammi di sequenza (sequence diagram) è vera?",
+    "answers": [
+      "Ogni linea di vita rappresenta un metodo",
+      "Un messaggio m() da un oggetto di classe A ad un oggetto di classe B implica che m() sia un'operazione della classe B",
+      "Un messaggio di tipo trovato descrive un metodo che effettua una ricerca di elementi in una collezione",
+      "Si tratta di un tipo di diagramma usato per modellare aspetti statici"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel contesto dello stile architetturale a micro-servizi (micro-service), quale è la funzione dell'API Gateway?",
+    "answers": [
+      "Permette la comunicazione punto a punto tra i vari micro-servizi del sistema SW",
+      "Permette la comunicazione tra i vari micro-servizi e il DB centrale del sistema SW",
+      "Agisce come un Observer, monitorando il corretto funzionamento del sistema SW",
+      "Agisce come un Facade, esponendo un'interfaccia verso il client e gestendo le chiamate ai vari micro-servizi"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni in merito al software testing è errata/falsa?",
+    "answers": [
+      "La bontà di una test suite si misura esclusivamente in base al numero di fault trovati nel codice che essa testa",
+      "Il criterio di copertura All Paths coverage può generare cammini infeasible",
+      "Il black box testing è una tecnica di testing particolarmente indicata per testare il software a livello di sistema (System level)",
+      "Applicando Equivalence Partitioning nel modo classico su un range di valori [0, 100] si ottengono tre classi di equivalenza"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Di solito usare componenti SW a grana grossa (Large-grain) in un sistema SW:",
+    "answers": [
+      "Riduce la performance",
+      "Migliora performance e maintainability",
+      "Migliora la maintainability",
+      "Migliora la performance ma riduce la maintainability"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In base al class diagram Rubrica e Contatto, quale sequence diagram è corretto per modellare la creazione di un nuovo contatto?",
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è l'OMG?",
+    "answers": [
+      "Un consorzio di aziende (tra cui Microsoft, Digital e HP) che crea standard come CORBA, UML e XMI",
+      "Un'azienda statunitense nota per i report di project management e analisi di progetti",
+      "Una delle più grandi aziende informatiche mondiali per fatturato e capitalizzazione",
+      "Un consorzio di aziende che ha creato standard di software testing come ISO/IEC/IEEE 291119"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale refactoring è stato applicato al codice seguente?",
+    "answers": [
+      "Replace Inheritance with Delegation",
+      "Extract Method",
+      "Replace Temp With Query",
+      "Remove Cloned Code"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti opzioni è più indicata per un Project Manager che deve sviluppare un sistema SW medicale safety-critical con requisiti instabili?",
+    "answers": [
+      "Applicare un metodo di sviluppo prescrittivo con molte milestone e code review frequenti",
+      "Applicare Extreme Programming",
+      "Utilizzare un metodo di sviluppo che bilancia agilità e disciplina",
+      "Seguire il metodo di sviluppo denominato Unified Process"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali attività compongono il processo di Requirements Engineering (RE) e permettono la creazione e revisione del Requirements Document?",
+    "answers": [
+      "Elicitation, Elaboration, Specification, Testing, Documentation",
+      "Extraction, Elaboration, Specification, Validation, Documentation",
+      "Elicitation, Analysis, Specification, Validation, Management",
+      "Extraction, Analysis, Specification, Testing, Management"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale relazione va definita tra i casi d’uso nel diagramma UML?",
+    "answers": [
+      "Estensione",
+      "Generalizzazione",
+      "Realizzazione",
+      "Utilizzo"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni relative al Sequence diagram UML mostrato in figura è corretta?",
+    "answers": [
+      "Il messaggio “doPayment” ricevuto da Payment System dovrebbe partire da una lifeline esplicita; la notazione con il cerchio nero non è permessa in UML",
+      "Il diagramma non mostra i numeri sequenziali sopra le frecce, quindi non è sintatticamente corretto in UML",
+      "I partecipanti sono anonimi e, non essendo specificate istanze, non è possibile effettuare alcun self-message come “completePayment”",
+      "La classe Bank System fornisce un metodo chiamato checkAvailability con due parametri e ritorna un valore (probabilmente booleano)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Gli Screen mockup sono di solito utilizzati dagli Analisti SW:",
+    "answers": [
+      "Nei requisiti SW per specificare quale sarà l’effettiva GUI del sistema una volta realizzato",
+      "Negli use case diagram per chiarire il ruolo degli attori",
+      "Negli use case per chiarire alcuni passi mediante un “abbozzo” di GUI",
+      "Nei requisiti per sottolineare la differenza tra requisiti utente e di sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale stile architetturale è più adatto per implementare un sistema SW gestionale con interfaccia grafica e smistamento delle operazioni?",
+    "answers": [
+      "Pipe and filter",
+      "Stratificato (Layered)",
+      "Manager model",
+      "Client-server"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Se dovessi consigliare un libro di Ingegneria del SW generale e introduttivo, quale autore suggeriresti?",
+    "answers": [
+      "I. Sommerville",
+      "E. Gamma",
+      "M. Fowler",
+      "K. Beck"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Dato il class diagram etichettato con X in figura, quale tra gli altri class diagram è il più adeguato a rappresentare X preservandone le proprietà?",
+    "answers": [
+      "Il class diagram D",
+      "Il class diagram C",
+      "Il class diagram A",
+      "Il class diagram B"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale macro-categoria di tecniche di testing è considerata la più efficace in ambito industriale?",
+    "answers": [
+      "Non esiste una risposta assoluta, poiché dipende da vari fattori. In generale, le tecniche di testing sono complementari, ma uno studio suggerisce che il testing funzionale con tester esperti individua più fault rispetto al testing strutturale",
+      "Il black box testing perché può essere usato con qualsiasi tipo di sistema, indipendentemente da tecnologia/piattaforma/linguaggio",
+      "Il black box testing perché può essere usato per Unit, Integration e System testing",
+      "Il white-box testing perché permette di analizzare il codice sorgente e individuare percorsi non coperti, condizioni non testate e potenziali vulnerabilità"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Quale design pattern è implementato dal seguente codice Java?",
+    "answers": [
+      "Template Method",
+      "Adapter",
+      "Observer",
+      "Facade"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale modello di processo di sviluppo software utilizzeresti per progettare un’applicazione Web To-Do List collaborativa in tempo reale con soli tre sviluppatori?",
+    "answers": [
+      "Modello di sviluppo a spirale",
+      "Unified Process",
+      "Test Driven Development (TDD)",
+      "Extreme Programming"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali tra i seguenti motivi di insuccesso di un progetto software si trovano nelle ultime posizioni nella lista stilata nello Standish Group?",
+    "answers": [
+      "Carenze di risorse",
+      "Cambiamento di requisiti e specifiche",
+      "Incompletezza dei requisiti e mancato coinvolgimento degli utenti durante la fase di analisi",
+      "Incompetenza tecnologica del Team informatico (Analisti, progettisti e sviluppatori)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che diagramma UML è il seguente?",
+    "answers": [
+      "Object Diagram",
+      "Communication Diagram",
+      "Class Diagram",
+      "Sequence Diagram"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Secondo Fred Brooks, qual è la sfida più difficile durante lo sviluppo di un sistema software?",
+    "answers": [
+      "Progettare un design Platform Independent adatto al problema da risolvere",
+      "Correggere i difetti durante la fase di Testing",
+      "Decidere cosa realizzare",
+      "Scegliere la tecnologia (piattaforma, linguaggio, frameworks) più adatta per lo sviluppo"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa rappresenta il concetto di debito tecnico nello sviluppo software?",
+    "answers": [
+      "Un costo monetario aggiuntivo per utilizzare strumenti di terze parti",
+      "Una situazione in cui il codice ha problemi strutturali che potrebbero causare costi futuri per correzioni e manutenzione",
+      "L'accumulo di errori runtime durante l'integrazione di più moduli",
+      "Una tecnica di sviluppo per simulare sistemi finanziari nei software"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è un mock object o uno stub nel contesto del software testing?",
+    "answers": [
+      "Un oggetto reale utilizzato per eseguire test di integrazione, che interagisce con i componenti reali senza simulazioni",
+      "Un oggetto simulato che verifica le interazioni tra componenti, imitando il comportamento di un componente reale per testarne le chiamate e risposte",
+      "Un oggetto che sostituisce un componente reale durante i test mediante risultati randomici utili a testare il sistema in isolamento",
+      "Un componente che sostituisce un modulo reale per simulare guasti hardware durante i test di resilienza"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni relativamente al framework JUnit 5 è vera?",
+    "answers": [
+      "Nativamente non distingue i fallimenti nell'esecuzione dei test dovuti a asserzioni fallite da quelli dovuti a eccezioni sollevate",
+      "Viene usato principalmente in ambito di testing di sistema e di interfaccia utente",
+      "Utilizza l'annotazione @BeforeEach per indicare un metodo chiamato un'unica volta a inizio esecuzione di una test suite",
+      "Supporta varie tipologie di asserzione, a seconda del tipo di dato, incluse asserzioni temporali"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Quale code smell è presente nella classe Invoice rappresentata a lato?",
+    "answers": [
+      "Dotty indirection",
+      "Methodic Monotony",
+      "Data class",
+      "Message chains"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Quale dei seguenti Design Pattern viene utilizzato all’interno del Pattern architetturale MVC?",
+    "answers": [
+      "Observer design pattern",
+      "Factory design pattern",
+      "State design pattern",
+      "Strategy design pattern"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Cosa possiamo dire della seguente classe Car Java dal punto di vista dei principi di design?",
+    "answers": [
+      "La classe ha LCOM uguale a zero",
+      "La classe segue correttamente il principio di responsabilità unica",
+      "La classe presenta una bassa coesione tra i suoi metodi",
+      "La classe è coesa"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel seguente Use Case Diagram UML quale stereotipo metteresti sulla freccia che collega lo Use Case ATM Transaction e Customer Authentication?",
+    "answers": [
+      "<<extend>>",
+      "<<generalize>>",
+      "<<use>>",
+      "<<include>>"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali tra i seguenti fattori sono considerati tra i principali rischi durante lo sviluppo di un progetto software?",
+    "answers": [
+      "Cambiamenti frequenti nella tecnologia adottata",
+      "Mancanza di una visione chiara dei requisiti da parte del cliente",
+      "Sovrastima delle capacità del team",
+      "Eccessiva documentazione senza automatismi di aggiornamento"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In quale diagramma UML può essere usato il seguente simbolo?",
+    "answers": [
+      "Activity Diagram",
+      "Communication Diagram",
+      "Component Diagram",
+      "Sequence Diagram"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Secondo Fred Brooks, quale aspetto tra i seguenti rappresenta il \"silver bullet\" nello sviluppo software?",
+    "answers": [
+      "L'adozione di una metodologia agile su larga scala efficace (es. DevOps)",
+      "L'uso di strumenti CASE avanzati",
+      "Non esiste il \"silver bullet\" nello sviluppo software",
+      "La completa automazione del testing"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa rappresenta il concetto di debito tecnico nello sviluppo software?",
+    "answers": [
+      "Un costo monetario aggiuntivo per utilizzare strumenti di terze parti",
+      "Una situazione in cui il codice ha problemi strutturali che potrebbero causare costi futuri per correzioni e manutenzione",
+      "L'accumulo di errori runtime durante l'integrazione di più moduli",
+      "Una tecnica di sviluppo per simulare sistemi finanziari nei software"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa si intende con code smell?",
+    "answers": [
+      "Un errore del codice che ne impedisce la compilazione o l'esecuzione",
+      "Un'indicazione di una caratteristica nascosta del codice che potrebbe causare futuri problemi",
+      "Un design pattern specifico per la gestione della leggibilità e manutenibilità del codice",
+      "Una funzionalità presente nei principali debugger per trovare problemi nel codice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni relativamente al framework JUnit 5 è falsa?",
+    "answers": [
+      "Consente l'uso di annotazioni per personalizzare i test",
+      "Supporta test parametrizzati per verificare scenari multipli",
+      "Richiede necessariamente l'estensione della classe TestCase",
+      "Permette di rilevare errori a runtime oltre a problemi su asserzioni"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale code smell NON è presente nella classe AbstractCollection rappresentata a lato?",
+    "answers": [
+      "Long Method",
+      "Duplicated code",
+      "Too many If statements",
+      "Message chains"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Nel contesto del pattern architetturale MVC (Model-View-Controller), quale delle seguenti affermazioni descrive meglio la responsabilità del Controller?",
+    "answers": [
+      "Si occupa di aggiornare il Model e la View",
+      "Si occupa di visualizzare i dati provenienti dal Model",
+      "Si occupa di gestire i dati del Model e aggiornarli nel Database",
+      "Si occupa di controllare la visualizzazione di widget e dati nella View"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa possiamo dire delle due classi Engine e Car nella figura mostrata a destra?",
+    "answers": [
+      "Le classi Engine e Car non sono coese",
+      "L’incapsulamento non è corretto",
+      "Esiste una dipendenza che parte dalla classe Engine verso la classe Car",
+      "Le classi Engine e Car sono fortemente accoppiate"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti relazioni tra due use case UC1 e UC2 rappresenta il concetto \"UC2 utilizza UC1 per il suo completamento\"?",
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In che modo possiamo esprimere i vincoli (cioè le constraint) in un diagramma delle classi UML?",
+    "answers": [
+      "Le specifiche UML non danno informazioni in merito; l'unica regola è indicare i vincoli tra parentesi tonde",
+      "Indicandoli tra parentesi graffe attraverso il linguaggio naturale, un linguaggio di programmazione o OCL (Object Constraint Language)",
+      "Non serve un modo esplicito per aggiungere vincoli aggiuntivi: tutti i vincoli si possono esprimere mediante associazioni, attributi e generalizzazione",
+      "Unicamente utilizzando il linguaggio OCL (Object Constraint Language)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa indica un alto Fan-out tra moduli (o componenti) di un sistema software?",
+    "answers": [
+      "Indica buon riuso",
+      "Indica eccessiva dipendenza e che il modulo andrebbe decomposto",
+      "Indica alto accoppiamento (Content coupling)",
+      "Indica violazione dell'Information Hiding"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Per quale attività/task NON è particolarmente indicato il Design by Contract proposto da B. Meyer?",
+    "answers": [
+      "Per documentare cosa fa una classe/componente",
+      "Per effettuare il refactoring di una classe",
+      "In fase di Debugging, per trovare un malfunzionamento nel software",
+      "Per la generazione di casi di test blackbox"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel contesto dello stile architetturale a micro-servizi (micro-service), quale è la funzione dell'API Gateway?",
+    "answers": [
+      "Permette la comunicazione punto a punto dei vari micro-servizi che costituiscono il sistema SW",
+      "Permette la comunicazione tra i vari micro-servizi e il DB centrale del sistema SW",
+      "Agisce come un Observer, che vigila sul corretto funzionamento del sistema SW",
+      "Agisce come un Facade, esponendo un'interfaccia verso il client e gestendo le chiamate ai vari micro-servizi"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni in merito al software testing è errata/falsa?",
+    "answers": [
+      "La bontà di una test suite si misura in base al numero di fault trovati nel codice che essa testa",
+      "Il criterio di copertura All Paths coverage può generare cammini infeasible",
+      "Il black box testing è una tecnica di testing particolarmente indicata per testare il software a livello di sistema (System level)",
+      "Applicando Equivalence Partitioning nel modo classico su un range di valori [0, 100] si ottengono tre classi di equivalenza"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Di solito usare componenti SW a grana grossa (Large-grain) in un sistema SW:",
+    "answers": [
+      "Riduce la performance",
+      "Migliora performance e maintainability",
+      "Migliora la maintainability",
+      "Migliora la performance ma riduce la maintainability"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti relazioni tra due use case UC1 e UC2 rappresenta il concetto \"UC2 utilizza UC1 per il suo completamento\"?",
+    "answers": [
+      "La relazione A",
+      "La relazione B",
+      "La relazione C",
+      "La relazione D"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è l'OMG?",
+    "answers": [
+      "Un consorzio di aziende (tra cui Microsoft, Digital, HP, NCR, SUN, OSF) avente l'obiettivo di creare standard come CORBA, UML e XMI",
+      "Un'azienda statunitense conosciuta per i report riguardanti i progetti (project management)",
+      "Una delle più importanti aziende d'informatica del mondo, tra le maggiori produttrici di software per fatturato e capitalizzazione azionaria",
+      "Un consorzio di aziende che ha creato diversi standard nell'ambito del software testing, tra cui ISO/IEC/IEEE 29119"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale design pattern è stato applicato al codice di sinistra per ottenere quello di destra?",
+    "answers": [
+      "Template Method",
+      "Adapter",
+      "Facade",
+      "Observer"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale delle seguenti opzioni è più indicata per un Project Manager che deve sviluppare un sistema SW medicale safety-critical con requisiti instabili?",
+    "answers": [
+      "Applicare un metodo di sviluppo prescrittivo con molte milestone e code review frequenti",
+      "Applicare Extreme Programming",
+      "Utilizzare un metodo di sviluppo che bilancia agilità e disciplina",
+      "Seguire il metodo di sviluppo denominato Unified Process"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali tra i seguenti motivi di insuccesso di un progetto software si trovano nelle primissime posizioni nella lista stilata nello Standish Group?",
+    "answers": [
+      "Incompetenza tecnologica del Team informatico (Analisti, progettisti e sviluppatori)",
+      "Carenze di risorse e carenza di gestione del settore IT",
+      "Incompletezza dei requisiti e mancato coinvolgimento degli utenti durante la fase di analisi",
+      "Carenza di pianificazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che diagramma UML è il seguente?",
+    "answers": [
+      "Communication Diagram",
+      "Object Diagram",
+      "Class Diagram",
+      "Sequence diagram"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In Extreme Programming che indicatore viene solitamente usato come indice di progresso nella codifica di un SW?",
+    "answers": [
+      "La percentuale di User stories implementate",
+      "La percentuale di casi di test di unità (Unit test) superati (sul totale)",
+      "Non viene usato nessun indicatore. Essendo un metodo agile gli indicatori non si utilizzano",
+      "La percentuale di casi di test di accettazione superati/passati (sul totale)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa vuole dire prioritizzazione dei requisiti?",
+    "answers": [
+      "Scrivere dei casi di test a partire dai requisiti",
+      "Decidere per ogni requisito il valore corrispettivo in points e lasciare all’utente la scelta dei requisiti da includere nella release successiva considerando un valore totale di points massimo che il Team di sviluppo potrà implementare in uno sprint",
+      "Dare un ordine ai requisiti per decidere quali implementare (ad esempio suddividendoli in necessari, desiderabili e possibili)",
+      "Analizzare i requisiti per stabilirne la fattibilità e la correttezza"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale refactoring visto a lezione si potrebbe applicare alla seguente porzione di codice?",
+    "answers": [
+      "Split Temporary Variable",
+      "Replace Temp with Query",
+      "Remove Parameter",
+      "Replace Inheritance with Delegation"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In qualità di Project Manager ed avendo a disposizione un budget molto cospicuo, che ragionamento faresti prima di rilasciare un software safety-critical per la somministrazione di insulina a pazienti diabetici?",
+    "answers": [
+      "È sufficiente applicare software testing utilizzando il branch coverage perché questo criterio è richiesto dallo standard ANSI/IEEE Std 1008-1987 in casi di sistemi critici e complessi",
+      "Dato che il sistema software è safety-critical è preferibile applicare il criterio di testing denominato path-coverage. Per maggiore tranquillità è preferibile la variante completa del criterio",
+      "Oltre al software testing (White e Black-box) è meglio prendere in considerazione anche altre tecniche di verifica formale. Ad esempio model-checking e usare tool di analisi statica del codice (come ad esempio STAN4J)",
+      "È necessario, partendo dalle specifiche, sviluppare un nuovo prototipo del sistema SW con un linguaggio di altissimo livello da utilizzare per verificare i risultati del sistema che si vuole rilasciare"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quante sono le interfacce esplicite fornite nel seguente Component diagram UML che si riferisce ad un sistema di gestione ordini?",
+    "answers": [
+      "Otto",
+      "Quattro",
+      "Tre",
+      "Sette"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nell’ipotesi di realizzare un sistema di broadcasting quale dei seguenti design pattern prenderesti in considerazione?",
+    "answers": [
+      "Observer design pattern",
+      "Facade design Pattern",
+      "State design Pattern",
+      "Template method design pattern"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Il seguente requisito software “Il sistema bancario che sarà implementato dovrà permettere la consultazione del saldo” è un requisito:",
+    "answers": [
+      "Funzionale",
+      "Non funzionale",
+      "Implementativo",
+      "Di sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti affermazioni relative al processo di sviluppo UP (Unified Process) è la più corretta?",
+    "answers": [
+      "Lo Unified Process parte dall'alto cioè dalla visione d'insieme del sistema (Top-down), pone l'architettura al centro dello sviluppo (architecture centric) e non considera il concetto di rischio (No risk-driven)",
+      "Lo Unified Process parte dal basso, cioè dai singoli moduli costituenti il sistema (Bottom-up), pone l'architettura al centro dello sviluppo (architecture centric), è iterativo (iterative) ma non incrementale (No incremental)",
+      "Lo Unified Process è un metodo di sviluppo agile (lightweight) che concentra buona parte delle sue attività sulla fase di implementazione (code centric)",
+      "Lo Unified Process è indirizzato dalla visione dell'utente (Use-case driven), pone l'architettura al centro dello sviluppo (architecture centric), è iterativo (iterative) e incrementale (incremental)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il V-model è un modello di processo di sviluppo:",
+    "answers": [
+      "Evolutivo",
+      "Agile",
+      "Che dà particolare enfasi alle attività di testing e manutenzione",
+      "Incrementale"
+    ],
+    "correct": null
+  },
+  {
+    "question": "A quale dei seguenti stili architetturali corrisponde un'architettura software che può essere schematizzata come in figura?",
+    "answers": [
+      "Repository",
+      "Pipeline",
+      "Broadcast",
+      "Stratificato"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nell’ambito del design by contract:",
+    "answers": [
+      "È obbligatorio specificare un’invariante per ogni classe",
+      "Per alcune classi si può non specificare invariante, ma in tal caso è obbligatorio specificare pre e post-condizioni per ogni metodo della classe",
+      "Per alcune classi si può non specificare invariante e questo corrisponde a specificare l’invariante TRUE",
+      "Per alcune classi si può non specificare invariante, ma in tal caso non si potranno specificare pre e post-condizioni per alcun metodo della classe"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Perché sia facilmente mantenibile una componente software dovrebbe essere caratterizzata da:",
+    "answers": [
+      "Alto livello di coesione, alto grado di accoppiamento",
+      "Alto livello di coesione, basso grado di accoppiamento",
+      "Basso livello di coesione, alto grado di accoppiamento",
+      "I livelli di coesione e accoppiamento non hanno legami con la facilità di manutenzione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nella definizione dei mapping in un ORM quale Hibernate, per quanto riguarda le associazioni tra le classi:",
+    "answers": [
+      "Si tiene conto solo della molteplicità delle associazioni",
+      "Si tiene conto della molteplicità e della direzionalità delle associazioni",
+      "Si tiene conto solo della direzionalità delle associazioni",
+      "La definizione del mapping non dipende né dalla molteplicità né dalla direzionalità delle associazioni"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra questi è un principio dei metodi agili?",
+    "answers": [
+      "La collaborazione con il cliente è più importante della negoziazione contrattuale",
+      "Una documentazione omnicomprensiva è più importante del codice funzionante",
+      "Il contratto tra le parti è più importante della collaborazione con il cliente",
+      "Seguire un piano dettagliato (progetto) è più importante che rispondere ai cambiamenti"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni è vera in riferimento al testing di sistema (System testing)?",
+    "answers": [
+      "Si occupa solo di aspetti di correttezza",
+      "Di solito viene eseguito subito dopo il testing di unità",
+      "Di solito viene eseguito con approcci white-box",
+      "Viene eseguito nella fase di integrazione di sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il meta-modello UML:",
+    "answers": [
+      "È un linguaggio, un insieme di elementi e regole, di specifica formale per sistemi software",
+      "Definisce le caratteristiche e le relazioni esistenti tra i diversi elementi (es. Classi, attributi) di UML",
+      "È un insieme di diagrammi derivati dal meta-modello stesso che descrivono aspetti diversi dello stesso sistema software",
+      "È la sintassi grafica del linguaggio UML"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quando si parla di \"documentazione di un sistema software\" si intende/intendono:",
+    "answers": [
+      "I commenti messi all’interno del codice per chiarirne il comportamento",
+      "I documenti relativi alla fase di negoziazione contrattuale del sistema",
+      "L’insieme di documenti a corredo di un sistema software formati da requisiti, design e modelli in genere atti a documentare il sistema",
+      "I manuali utente"
+    ],
+    "correct": null
+  },
+  {
+    "question": "I tool di analisi statica del codice:",
+    "answers": [
+      "Eseguono il codice e dalle tracce ricavano delle preziose informazioni che vengono mostrate all’utente sotto forma di diagrammi",
+      "Generano in automatico codice a partire dal modello di un sistema",
+      "Sono tool che senza eseguire il codice estraggono delle informazioni che aiutano l’utente nella sua analisi",
+      "Sostituiscono le code review (ovvero revisioni di codice da parte di umani) con lo scopo di identificare fault nel codice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel modello a spirale:",
+    "answers": [
+      "È previsto l’uso di prototipi software solo di tipo throw-away",
+      "L’analisi dei rischi viene effettuata come prima attività, prima di intraprendere qualsiasi altra attività legata al progetto",
+      "La decisione se abbandonare o proseguire (go, no-go) il progetto viene riconsiderata più volte",
+      "L’interazione con il cliente è limitata alle fasi iniziali (raccolta dei requisiti) e finali (acceptance testing) del progetto"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti affermazioni sull’attività di manutenzione di un sistema software è corretta?",
+    "answers": [
+      "L’attività di manutenzione è generalmente trascurabile in termini di tempo e costo rispetto all’attività di progettazione e sviluppo precedente la consegna",
+      "La complessità dell’attività di manutenzione dipende in modo significativo solo dalla dimensione del sistema",
+      "La manutenzione degrada la struttura del software rendendo quindi più difficile la manutenzione successiva",
+      "La manutenzione correttiva (correzione degli errori) rappresenta la parte preponderante dell’attività di manutenzione svolta su un sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Relativamente ai Design Pattern quale delle seguenti affermazioni è vera?",
+    "answers": [
+      "Nello State pattern lo stato viene assegnato un’unica volta e non è più modificabile",
+      "Il pattern Observer riduce l’accoppiamento tra osservatori e osservato",
+      "Il pattern Abstract factory viene tipicamente utilizzato per creare una classe che collabora con classi non correlate, o che non si conoscono ancora",
+      "Il pattern Visitor viene principalmente utilizzato per rappresentare gerarchie di tutto-parti (strutture ad albero)"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Relativamente al design by contract quale delle seguenti affermazioni è vera?",
+    "answers": [
+      "Le precondizioni rappresentano obblighi per chi utilizza il metodo e benefici per chi lo fornisce",
+      "Una sottoclasse può rafforzare ma non indebolire una precondizione",
+      "Una violazione di una postcondizione corrisponde a un “bug” nella classe client",
+      "L’invariante di una classe include automaticamente in OR (disgiunzione) le invarianti di tutte le sue superclassi"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "La serializzazione di un oggetto:",
+    "answers": [
+      "Indica il processo per linearizzare lo stato di un oggetto in modo da poterlo salvare su un supporto di memorizzazione o trasmetterlo su una connessione di rete",
+      "Indica la memorizzazione dello stato di un oggetto in formato necessariamente binario su disco",
+      "Non permette in nessun caso di poter poi ricostruire lo stato di un oggetto serializzato per una successiva elaborazione da parte del programma",
+      "Se effettuata in formato XML non contiene informazioni sufficienti a poter poi ricostruire lo stato di un oggetto serializzato per una successiva elaborazione da parte del programma"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quali delle seguenti affermazioni è vera?",
+    "answers": [
+      "Operazione e metodo di una classe sono sinonimi",
+      "L’esecuzione di un’operazione di un oggetto non può provocare una variazione di stato dello stesso",
+      "Un’operazione è una specifica di un comportamento, mentre un’implementazione di quel comportamento è detta metodo",
+      "Lo stato di un oggetto non ne influenza il comportamento"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come viene rappresentata una dipendenza in un diagramma UML?",
+    "answers": [
+      "Con una \"freccia\" tratteggiata che parte dall’elemento cliente e arriva all’elemento fornitore",
+      "Mediante una linea unita tra cliente e fornitore",
+      "Con una \"freccia\" tratteggiata che parte dall’elemento fornitore e arriva all’elemento cliente",
+      "Nello stesso modo delle associazioni"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa è il pair programming?",
+    "answers": [
+      "Una pratica XP nella quale viene consigliato di scrivere i casi di test prima della codifica",
+      "Una pratica XP nella quale i programmatori lavorano a coppie. Di solito il più esperto scrive il codice",
+      "Una tecnica di design nella quale vengono usati dei foglietti adesivi su cui vengono scritti il nome delle classi, il loro scopo e le collaborazioni tra classi",
+      "Una pratica XP nella quale i programmatori lavorano a coppie. Di solito il meno esperto scrive il codice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Per quale motivo il criterio di testing “all paths coverage” viene utilizzato raramente nella pratica industriale?",
+    "answers": [
+      "Perché è difficile coprire ogni combinazione delle condizioni atomiche di un sistema reale",
+      "Perché la presenza dei loop rende il numero dei cammini possibili (e quindi da coprire) molto grande, rendendo la fase di test molto costosa",
+      "Perché la copertura minima richiesta dallo \"IEEE unit test standard\" è lo statement coverage",
+      "Perché alcuni cammini potrebbero essere \"infeasible\""
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Cosa si intende con stakeholder di un sistema?",
+    "answers": [
+      "Chiunque è interessato al sistema",
+      "Un attore (primario o secondario) del sistema",
+      "Il responsabile dello sviluppo del sistema",
+      "Il committente dello sviluppo del sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i seguenti può essere individuato come un difetto del modello a cascata?",
+    "answers": [
+      "Pospone l’implementazione a dopo che si sono ben compresi i requisiti del sistema",
+      "Rende difficoltosa la pianificazione e la gestione del progetto",
+      "La struttura lineare delle fasi è troppo rigida perché non consente di tenere conto del feedback da fasi successive",
+      "Non dà alcuna indicazione su come ogni fase trasforma l’input in output"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In una architettura client-server di tipo two-tiers fat-client, la logica applicativa è:",
+    "answers": [
+      "Nello strato client",
+      "Nello strato server",
+      "In un apposito strato detto application server",
+      "In nessuno degli strati precedenti"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i seguenti Design Pattern viene tipicamente utilizzato per creare una classe che collabora con classi non correlate, o che non si conoscono ancora?",
+    "answers": [
+      "State",
+      "Adapter",
+      "Observer",
+      "Visitor"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "L’alta coesione di un componente/classe:",
+    "answers": [
+      "Fa riferimento alla sua dimensione in termini di righe di codice",
+      "Permette di comprendere e modificare meglio il componente/classe",
+      "È indice di complessità nella comunicazione con altri componenti/classi",
+      "È indice di una dipendenza troppo forte da altre componenti/classi"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale vantaggio si ottiene a realizzare un “platform independent design”?",
+    "answers": [
+      "Il design è riusabile se cambia la piattaforma sottostante",
+      "La fase di testing del sistema è più semplice",
+      "Il design è più comprensibile (understandability)",
+      "La fase di ridocumentazione è più semplice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è un processo di sviluppo software?",
+    "answers": [
+      "Un insieme di diagrammi che formano un modello. L’insieme dei modelli costituisce il sistema software finale",
+      "Un approccio iterativo ad-hoc usato solo da piccole imprese",
+      "Un insieme di tecniche e tool da applicare per ottenere un sistema software",
+      "Un insieme strutturato e organizzato di attività che si svolgono per ottenere un sistema software"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti attività NON ricade usualmente nella fase di manutenzione del software?",
+    "answers": [
+      "Aggiungere una nuova funzionalità o modificarne una esistente",
+      "Adattare il sistema software ad un nuovo sistema operativo (ad esempio Windows XP → Windows 7)",
+      "Modificare l’architettura del sistema",
+      "Rimediare ad errori ancora presenti dopo il delivery"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra questi è un vantaggio del black box testing?",
+    "answers": [
+      "L’automazione è più facile ed efficiente",
+      "Può essere usato con qualsiasi tipo di sistema software indipendentemente dalla tecnologia/linguaggio usato",
+      "Permette di sondare tutti i cammini di un programma",
+      "Rende più semplice la fase di debugging in quanto la segnalazione del malfunzionamento indica il punto del codice e i valori delle variabili per cui il malfunzionamento si è manifestato"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In quale dei seguenti contesti è particolarmente adeguato utilizzare una metodologia agile come Extreme Programming?",
+    "answers": [
+      "Il gruppo di sviluppo è costituito da molti sviluppatori (> 50) non molto esperti e i requisiti sono abbastanza stabili",
+      "Si hanno a disposizione dei requisiti precisi e stabili ma il customer è poco disponibile a chiarimenti in quanto molto occupato in attività di business",
+      "Il software da sviluppare è particolarmente critico (es. software per monitorare una centrale nucleare)",
+      "Il gruppo di sviluppo è costituito da pochi bravi sviluppatori, i requisiti cambiano velocemente e il software non è critico"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che problemi possono creare le componenti fortemente connesse (alto accoppiamento) in un’applicazione (ad esempio quelle trovate dal tool Stan4J e chiamate tangles)?",
+    "answers": [
+      "Difficoltà nella fase di manutenzione",
+      "Inefficienza",
+      "Aumento del tempo di sviluppo",
+      "Classi troppo coese che creano problemi di comprensione del codice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In quali metodi di sviluppo gioca un ruolo fondamentale la fase di design?",
+    "answers": [
+      "CRC e TDD",
+      "UML",
+      "Agili (es. Extreme programming)",
+      "Plan-driven"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Perché si usa la \"prioritizzazione\" dei requisiti?",
+    "answers": [
+      "Per avere un ordine alfanumerico dei requisiti",
+      "Per stabilire cosa includere in un incremento/release software",
+      "Per partizionare i requisiti funzionali da quelli non funzionali",
+      "Per permettere un’equa distribuzione del carico di lavoro agli sviluppatori"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale dei seguenti diagrammi UML descrive il comportamento (behaviour)?",
+    "answers": [
+      "Class e object diagrams",
+      "Package diagrams",
+      "Class e interaction diagrams",
+      "State, activity e interaction diagrams"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti frasi è corretta?",
+    "answers": [
+      "Errore, fault e failure sono sinonimi",
+      "Il testing esaustivo è spesso realizzabile nei casi reali",
+      "Lo scopo del software testing è mostrare la presenza di fault",
+      "Un fault in un programma porta inevitabilmente ad avere un failure"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nello sviluppo a fasi:",
+    "answers": [
+      "Viene rilasciata un’unica release complessiva del sistema, sviluppata seguendo tutte le fasi previste dal ciclo di sviluppo software",
+      "Possono essere rilasciate diverse release, solo per correggere errori presenti nella prima release del sistema",
+      "Possono essere rilasciate diverse release, ognuna corrispondente a diversi ambienti di esecuzione del sistema",
+      "Vengono rilasciate varie release, ognuna delle quali aggiunge nuove funzionalità al sistema e/o estende o raffina funzionalità già presenti"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nei diagrammi dei casi d’uso, le relazioni di generalizzazione/specializzazione:",
+    "answers": [
+      "Possono esistere sia tra attori che tra casi d’uso",
+      "Possono esistere solo tra attori",
+      "Possono esistere solo tra casi d’uso",
+      "Non possono esistere né tra attori né tra casi d’uso"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le proprietà di una componente misura (informalmente) la qualità della strutturazione dal punto di vista del raggruppamento delle funzioni?",
+    "answers": [
+      "Complessità ciclomatica",
+      "Coesione",
+      "Coupling",
+      "Information hiding"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale dei seguenti design pattern permette di fattorizzare il comportamento comune a vari algoritmi e di localizzarlo in una classe comune per evitare duplicazioni?",
+    "answers": [
+      "Singleton",
+      "Command",
+      "Template method",
+      "Observer"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Perché sono stati proposti modelli del processo di sviluppo software?",
+    "answers": [
+      "Perché il software è come qualsiasi altro prodotto manifatturiero",
+      "Per limitare i gradi di libertà degli sviluppatori",
+      "Per aumentare la produttività e migliorare la qualità del software prodotto",
+      "Per aumentare i gradi di libertà degli sviluppatori"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Gli use case:",
+    "answers": [
+      "Sono una tecnica visuale per esprimere requisiti funzionali e non funzionali di un sistema",
+      "Sono una tecnica Object-Oriented per esprimere requisiti funzionali di un sistema",
+      "Sono una tecnica testuale per esprimere requisiti funzionali di un sistema",
+      "Sono una tecnica testuale per esprimere requisiti funzionali e non funzionali di un sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti NON è una delle proprietà che dovrebbero caratterizzare i requisiti?",
+    "answers": [
+      "Verificabilità",
+      "Coesione",
+      "Consistenza",
+      "Realismo"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Qual è il vantaggio principale di un sistema sviluppato in modo stratificato (layered)?",
+    "answers": [
+      "Se cambia l’interfaccia di un livello, solo il livello sovrastante ne è influenzato",
+      "Si migliora la performance",
+      "Se cambia l’interfaccia di un livello, solo il livello sottostante ne è influenzato",
+      "Se cambia l’interfaccia di un livello, solo i livelli adiacenti (soprastante e sottostante) ne sono influenzati"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Individuare quale tra i seguenti è lo stile architetturale più adatto per un news feeder che invia email di notifica agli utenti interessati della pubblicazione di notizie (su argomenti sui quali gli utenti abbiano espresso interesse):",
+    "answers": [
+      "Pipe and Filter",
+      "Client-Server",
+      "Event-Based / Publish-Subscribe",
+      "Nessuno dei precedenti"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti notazioni è la più adatta per esprimere la logica di controllo?",
+    "answers": [
+      "Sequence diagrams",
+      "Activity diagrams e/o pseudo-codice",
+      "Use cases e use case diagrams",
+      "TDD"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Dato il seguente class diagram, quale costrutto OCL esprime il seguente vincolo: \"nessuna Persona ha più di due veicoli\"?",
+    "answers": [
+      "Context Persona Inv: `self.parco -> size <= 2`",
+      "Context Veicolo Inv: `self.size <= 2`",
+      "Context Persona Inv: `self.parco -> size < 2`",
+      "Context Veicolo Inv: `self.size <= 2`"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti proprietà NON è valida?",
+    "answers": [
+      "Branch coverage ⇒ Statement coverage",
+      "All path coverage ⇒ Multiple condition coverage",
+      "All path coverage ⇒ Statement coverage",
+      "Multiple condition coverage ⇒ Branch coverage"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa è un “code clone”?",
+    "answers": [
+      "Un design pattern",
+      "Un tool di analisi statica",
+      "Una porzione di codice simile a un’altra (ed avente la stessa funzionalità) nello stesso programma",
+      "Una tecnica di refactoring che, date due porzioni simili di codice, le fattorizza (ovvero le sostituisce con chiamate a funzioni/procedure)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali sono state le cause indirette del peggiore incidente in 35 anni di storia sulla radioterapia (Therac-25)?",
+    "answers": [
+      "Problemi manageriali",
+      "È stato utilizzato un componente di una versione precedente del sistema senza testarlo in modo approfondito",
+      "Non sono state applicate tecniche e linguaggi formali (es. Z) durante lo sviluppo",
+      "Software scritto e sviluppato male"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il refactoring è:",
+    "answers": [
+      "Il processo che migliora la struttura interna di un sistema software e modifica alcuni requisiti funzionali del sistema",
+      "Il processo correttivo e di sviluppo che avviene dopo il rilascio del prodotto finale in un ambiente di produzione",
+      "Un procedimento utilizzato per individuare le carenze di correttezza, completezza e affidabilità delle componenti software in corso di sviluppo",
+      "Il processo che migliora la struttura interna di un sistema software senza alterarne il comportamento esterno (ovvero i requisiti funzionali rimangono gli stessi)"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "Un alto valore della metrica LCOM:",
+    "answers": [
+      "Indica un alto livello di riuso della classe",
+      "Indica un alto coupling del sistema",
+      "Denota mancanza di coesione tra i metodi di una classe",
+      "Denota una buona coesione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In quale dei seguenti contesti è particolarmente adeguato utilizzare una metodologia agile (es. Extreme Programming)?",
+    "answers": [
+      "Il gruppo di sviluppo è costituito da molti sviluppatori (> 50) non molto esperti e i requisiti sono abbastanza stabili",
+      "Il gruppo di sviluppo è costituito da pochi bravi sviluppatori, i requisiti sono abbastanza instabili e il software non è critico",
+      "Si hanno a disposizione dei requisiti precisi e stabili ma il customer è poco disponibile a chiarimenti in quanto molto occupato in attività di business",
+      "Il software da sviluppare è particolarmente critico (es. software per monitorare una centrale nucleare)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale è l’idea alla base del Model Driven Development (MDD)?",
+    "answers": [
+      "Il modello che rappresenta il design di un sistema viene usato dai programmatori come base per sviluppare il codice",
+      "Il modello viene utilizzato per generare i casi di test che poi guideranno lo sviluppo del sistema",
+      "Il modello rappresenta una versione completa del sistema e viene tradotto manualmente dai programmatori in codice",
+      "Si esegue direttamente il modello mediante tool specifici oppure il codice viene generato in automatico a partire dal modello"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale dei seguenti modelli del processo di sviluppo software deriva dal processo manifatturiero e ha forti analogie con lo sviluppo di altri sistemi?",
+    "answers": [
+      "Modello a spirale",
+      "RUP",
+      "V-model",
+      "Waterfall model"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale è il tipo di manutenzione cui è dedicata la percentuale più significativa dell’attività di manutenzione su un sistema?",
+    "answers": [
+      "Correttiva (per “riparare” errori nel software)",
+      "Adattiva (per adattare il software a diversi ambienti)",
+      "Migliorativa (per aggiungere o modificare le funzionalità del sistema)",
+      "Preventiva (per prevenire problemi futuri)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In UML cosa indica il segno \"-\" (meno) posto davanti un attributo di una classe?",
+    "answers": [
+      "L’attributo è privato, ovvero che l’utilizzo è consentito solo alla classe originale che lo contiene",
+      "L’attributo è pubblico, ovvero che l’utilizzo viene esteso a tutte le classi",
+      "L’attributo è protetto, ovvero che l’utilizzo è consentito solo alle classi del package",
+      "L’attributo è privato, ovvero che l’utilizzo è consentito solo alla classe originale che lo contiene e a tutte le sue sottoclassi"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come vengono chiamati i requisiti che riguardano la scelta di linguaggi, piattaforme, strumenti (tools) e tecniche d’implementazione?",
+    "answers": [
+      "Requisiti funzionali",
+      "Requisiti tecnologici",
+      "Requisiti non funzionali",
+      "Requisiti desiderabili (SHOULD)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Una proprietà invariante di una classe:",
+    "answers": [
+      "Non può mai essere falsificata",
+      "Può essere falsificata solo nel caso in cui tutte le pre-condizioni e post-condizioni associate a tutte le operazioni della classe siano soddisfatte",
+      "Può essere falsificata solo nel caso in cui tutte le pre-condizioni e post-condizioni associate a tutte le operazioni pubbliche della classe siano soddisfatte",
+      "Può essere falsificata durante l’esecuzione di un metodo, ma deve nuovamente valere prima che qualsiasi altro oggetto possa invocare un’altra operazione della classe"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale dei seguenti design pattern utilizzereste quando operazioni diverse e non correlate devono essere eseguite sugli elementi di una struttura ad oggetti, e si vuole evitare di “sporcare” le loro classi con queste operazioni?",
+    "answers": [
+      "Template Method",
+      "Adapter",
+      "Visitor",
+      "Facade"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "In quale dei seguenti contesti è particolarmente adeguato utilizzare una metodologia agile (es. Extreme Programming)?",
+    "answers": [
+      "Il gruppo di sviluppo è costituito da molti sviluppatori (> 50) non molto esperti e i requisiti sono abbastanza stabili",
+      "Il gruppo di sviluppo è costituito da pochi bravi sviluppatori, i requisiti sono abbastanza instabili e il software non è critico",
+      "Si hanno a disposizione dei requisiti precisi e stabili ma il cliente è poco disponibile a chiarimenti in quanto molto occupato in attività di business",
+      "Il software da sviluppare è particolarmente critico (es. software per monitorare una centrale nucleare o software per una TAC)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti frasi è corretta/vera?",
+    "answers": [
+      "Errore, fault e failure sono tutti sinonimi",
+      "Il software testing esaustivo viene spesso realizzato nei progetti reali",
+      "Lo scopo del software testing è mostrare la presenza di fault",
+      "Un fault in un programma porta inevitabilmente alla manifestazione di un failure (prima o poi)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "La seguente Figura rappresenta l’architettura di un compilatore. A quale dei seguenti stili è conforme?",
+    "answers": [
+      "È un’architettura eterogenea che unisce “pipe and filters” e repository",
+      "È un’architettura eterogenea che unisce “pipe and filters”, repository e broadcast model",
+      "È un pipe and filters",
+      "È un repository (la symbol table “gioca il ruolo di repository”)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale è l’idea che sta alla base del model driven development (MDD)?",
+    "answers": [
+      "Il modello che rappresenta il design di un sistema viene usato dai programmatori solo come base per sviluppare il codice",
+      "Il modello viene utilizzato per generare i casi di test che poi guideranno lo sviluppo del sistema (test driven development)",
+      "Il modello rappresenta una versione completa del sistema e viene tradotto manualmente dai programmatori in codice",
+      "Il modello viene eseguito direttamente mediante tool specifici oppure il codice viene generato in automatico a partire dal modello"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il refactoring è:",
+    "answers": [
+      "Il processo che migliora la struttura interna di un sistema software e modifica alcuni requisiti funzionali del sistema",
+      "Il processo correttivo e di sviluppo che avviene dopo il rilascio del prodotto finale in un ambiente di produzione",
+      "Un procedimento utilizzato per individuare le carenze di correttezza, completezza e affidabilità delle componenti software in corso di sviluppo",
+      "Il processo che migliora la struttura interna di un sistema software senza alterarne il comportamento esterno (ovvero i requisiti funzionali rimangono gli stessi)"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "Supponendo di dover testare le funzionalità principali di un’applicazione per smartphone che deve essere immessa sul mercato la prima volta e che è stata sviluppata in un linguaggio e con un framework (es. phoneGap) che non conosci (differente da Java), quale tipo di approccio di testing sceglieresti?",
+    "answers": [
+      "Black box testing usando equivalence partitioning o l’approccio three steps",
+      "White box testing con criterio branch coverage",
+      "Testing di regressione",
+      "Testing di unità usando JUnit"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Gli use case:",
+    "answers": [
+      "Sono una tecnica prettamente visuale usata per esprimere i requisiti funzionali e non funzionali di un sistema",
+      "Sono una tecnica Object-Oriented usata per esprimere requisiti funzionali di un sistema",
+      "Sono una tecnica testuale usata per esprimere i requisiti funzionali di un sistema",
+      "Sono una tecnica testuale usata per esprimere requisiti funzionali e non funzionali di un sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come vengono chiamati i requisiti che riguardano la scelta di linguaggi, piattaforme, strumenti (tools) e tecniche d’implementazione?",
+    "answers": [
+      "Requisiti funzionali",
+      "Requisiti tecnologici",
+      "Requisiti non funzionali",
+      "Requisiti desiderabili"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale dei seguenti design pattern permette di “fattorizzare” il comportamento comune a vari algoritmi e di localizzarlo in una classe comune per evitare duplicazioni?",
+    "answers": [
+      "Singleton",
+      "Command",
+      "Template method",
+      "Observer"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Quale è il tipo di manutenzione cui è dedicata la percentuale più significativa dell’attività di manutenzione su un sistema?",
+    "answers": [
+      "Correttiva (per “riparare” errori nel software)",
+      "Adattiva (per adattare il software a diversi ambienti)",
+      "Migliorativa (per aggiungere o modificare le funzionalità del sistema)",
+      "Preventiva (per prevenire problemi futuri)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali tra questi fattori è considerato più difficile da controllare nello sviluppo di un sistema software di grosse dimensioni (cioè gruppi di lavoro composti da molte persone, tempi di sviluppo > 6 mesi e software costituito da milioni di LOCs)?",
+    "answers": [
+      "Complessità intrinseca del problema che si deve affrontare",
+      "Rapida evoluzione e difficoltà nella scelta di linguaggi di programmazione, frameworks da utilizzare e tools per lo sviluppo (es. IDE)",
+      "Gestione del personale (es. creare gruppi di lavoro e sostituzione del personale) e allocazione delle risorse",
+      "Gestione dei costi e del bilancio"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Per quale motivo i requisiti vengono prioritizzati?",
+    "answers": [
+      "Per decidere cosa includere in un incremento; se stiamo utilizzando metodi di sviluppo software incrementali",
+      "Per stabilirne la fattibilità e la correttezza (es. per identificare i \"missing requirements\")",
+      "Per decidere come suddividere il lavoro di sviluppo tra i vari componenti del gruppo; se stiamo utilizzando una metodologia agile",
+      "Per decidere quali funzionalità della nostra applicazione testare per prime"
+    ],
+    "correct": null
+  },
+  {
+    "question": "La seguente Figura rappresenta un’istanza di un design pattern. Quale?",
+    "answers": [
+      "Adapter",
+      "Visitor",
+      "Facade",
+      "Composite"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Supponendo di dover testare nel dettaglio una componente software (es. classe) molto complessa (cioè con molti cicli e molte istruzioni condizionali) di un’applicazione per smartphone che è stata sviluppata in un linguaggio che conosci molto bene (es. Java) quale tipo di approccio di testing sceglieresti?",
+    "answers": [
+      "Black box testing usando equivalence partitioning",
+      "White box testing con criterio branch coverage",
+      "Testing di regressione",
+      "White box testing con criterio path coverage completo (cioè senza trattare i loop in modo binario)"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale tra i vari modelli di sviluppo è stato il primo ad introdurre il concetto di rischio nello sviluppo software?",
+    "answers": [
+      "Modello a cascata",
+      "Unified Process (UP)",
+      "V-model",
+      "Modello a spirale"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Qual è lo scopo degli oggetti DAO o layer di persistenza?",
+    "answers": [
+      "Sostituire l’utilizzo di connettori a basi di dati quali ad esempio JDBC",
+      "Incapsulare in un livello software la comunicazione tra l’applicazione e il DBMS",
+      "Disaccoppiare la \"presentation logic\" dalla \"business logic\"",
+      "Generare automaticamente il codice di accesso ai dati a partire dal relativo diagramma ER"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel contesto del design architetturale di un sistema software quale delle seguenti frasi è falsa?",
+    "answers": [
+      "Le componenti \"large-grain\" migliorano la performance ma riducono la maintainability",
+      "Dati ridondanti migliorano la availability ma peggiorano la safety",
+      "Usare un’architettura a livelli aumenta le comunicazioni tra componenti e così degrada le prestazioni",
+      "Usare un’architettura a livelli con le risorse critiche nei livelli più interni peggiora la safety"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che tipo di diagramma UML è rappresentato nella figura?",
+    "answers": [
+      "State diagram",
+      "Class diagram",
+      "Object diagram",
+      "Non è un diagramma UML"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è un code smell?",
+    "answers": [
+      "Un “indicatore” che qualcosa nel codice non va bene. Lo sviluppatore deciderà a posteriori se intervenire o no",
+      "Una “certezza” che qualcosa nel codice non va bene. Lo sviluppatore dovrà intervenire per sistemare il problema",
+      "Un sinonimo di “code clone”",
+      "Un errore che necessariamente si manifesta durante l’esecuzione del software"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come può essere catalogata un’operazione di refactoring di un sistema software che ha l’obiettivo di rendere più coesi (e quindi più mantenibili) alcuni moduli?",
+    "answers": [
+      "Manutenzione correttiva",
+      "Manutenzione preventiva",
+      "Manutenzione migliorativa",
+      "Manuntenzione adattiva"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è il re-engineering?",
+    "answers": [
+      "Processo che mira a produrre una vista del codice \"alternativa\" utile per understanding (ad esempio un flowchart)",
+      "Una trasformazione di codice mal-strutturato in codice ben-strutturato",
+      "Un’operazione che permette di ricavare il design o le specifiche di un sistema a partire dal codice",
+      "Un’operazione che sostanzialmente consiste di tre step: 1) reverse engineering, 2) modifica delle specifiche e design, 3) forward engineering (per creare un nuovo sistema basato sulle specifiche e design rivisitati)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nei metodi agili cosa si intende per “Tacit/implicit knowledge”?",
+    "answers": [
+      "Conoscenza nella testa di chi lavora (sviluppatori) piuttosto che nella documentazione che accompagna il codice",
+      "Gli sviluppatori devono lavorare assieme agli utenti che devono essere presenti e disponibili in modo da comprendere meglio il dominio ed arricchire la propria conoscenza di dominio e sistema",
+      "La conoscenza del dominio viene condivisa a distanza tra gli sviluppatori mediante strumenti collaborativi tipo wiki",
+      "Conoscenza riportata nei documenti testuali piuttosto che nella testa di chi lavora (sviluppatori)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel seguente diagramma UML è stato instanziato un design pattern. Quale?",
+    "answers": [
+      "Adapter",
+      "Visitor",
+      "State",
+      "Composite"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Nel contesto del software testing quando si parla di power di un criterio di test quale delle seguenti affermazioni è vera?",
+    "answers": [
+      "Più è alta la power del criterio di test scelto e più si riduce la size (dimensione) della test suite",
+      "Più è alta la power del criterio di test scelto e più è facile che la test suite generata trovi dei fault nell’applicazione che viene testata",
+      "Più è alta la power del criterio di test scelto e più diminuiscono i costi di produzione della test suite",
+      "Più è alta la power del criterio di test scelto e più è facile produrre i casi di test"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Se durante la fase di design di un software per un particolare dominio ci si accorge che tra i vari diagrammi UML non ne esiste uno adatto cosa è consigliabile fare?",
+    "answers": [
+      "Non è possibile che accada perché l’insieme dei diagrammi UML è pensato per essere esaustivo",
+      "Proporre all’OMG una modifica del meta-modello in modo tale che incorpori un nuovo diagramma adatto allo scopo",
+      "Si può scegliere tra: estendere UML tramite il concetto di profilo oppure usare dei diagrammi non UML",
+      "Occorre utilizzare un altro linguaggio di modellazione (ad esempio OMT o reti di Petri) che contiene un diagramma adatto allo scopo"
+    ],
+    "correct": null
+  },
+  {
+    "question": "I vantaggi principali offerti da un persistence framework quale Hibernate sono:",
+    "answers": [
+      "Possibilità di accedere a basi di dati legacy mal progettate",
+      "Accoppiamento diretto tra applicazione e DB (chi sviluppa l’applicazione deve conoscere bene i dettagli del DB)",
+      "Incremento delle prestazioni",
+      "Facilità nel cambiare la corrispondenza tra oggetti e DB, facilità di riuso e indipendenza dallo specifico DBMS"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale è l’idea alla base del model driven development (MDD)?",
+    "answers": [
+      "Si esegue direttamente il modello mediante tool specifici oppure il codice viene generato in automatico a partire dal modello",
+      "Il modello viene utilizzato per generare i casi di test che poi guideranno lo sviluppo del sistema",
+      "Il modello rappresenta una versione completa del sistema e viene tradotto manualmente dai programmatori in codice",
+      "Il modello che rappresenta il design di un sistema viene usato dai programmatori come base per sviluppare il codice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che problemi possono creare le componenti fortemente connesse (alto accoppiamento) in un’applicazione (ad esempio quelle trovate dal tool Stan4J e chiamate tangles)?",
+    "answers": [
+      "Rendono più complessa l’analisi statica e dinamica del codice eseguita con strumenti automatici",
+      "Rendono più complesse le modifiche del codice, la fase di testing e il riuso",
+      "Rendono il sistema più inefficiente in termini di memoria e tempo",
+      "Hanno un impatto negativo nella fase di sviluppo dell’applicazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Gli use case:",
+    "answers": [
+      "Sono una tecnica visuale usata per esprimere i requisiti funzionali di un sistema",
+      "Sono una tecnica prettamente OO che serve per esprimere i requisiti non funzionali di un sistema",
+      "Sono una tecnica testuale usata per esprimere i requisiti funzionali di un sistema",
+      "Sono una tecnica testuale usata per esprimere sia i requisiti funzionali che quelli non funzionali di un sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel contesto del design by contract una pre-condizione forte (cioè restrittiva) è:",
+    "answers": [
+      "Una buona notizia per cliente e fornitore",
+      "Una cattiva notizia per il fornitore, che deve garantire qualcosa di più",
+      "Una buona notizia per il fornitore, che ha la responsabilità di rispettare il contratto in meno casi",
+      "Una buona notizia per il cliente, a cui viene fornito un servizio più \"impegnativo\""
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale figura professionale IT si occupa di stimare i costi e far sì che il progetto rispetti i tempi e i costi?",
+    "answers": [
+      "Product Manager",
+      "Service Manager",
+      "Chief Executive Officer (CEO)",
+      "Project Manager"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Dovendo usare un'operazione sviluppata da altri sviluppatori della stessa azienda, i controlli da inserire nel proprio codice devono essere:",
+    "answers": [
+      "Il più possibile, non si può sapere quando \"fidarsi\" del codice (Melius abundare quam deficere)",
+      "Concordati tra chi sviluppa l’operazione e chi la usa, è importante che sia chiaro chi deve essere responsabile di effettuare il controllo",
+      "Il minimo indispensabile, per evitare la duplicazione di controlli. Troppi controlli riducono le prestazioni del sistema",
+      "Metà a carico del produttore dell’operazione e metà a carico del cliente dell’operazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "La seguente figura rappresenta un'istanza di uno stile architetturale. Quale?",
+    "answers": [
+      "Pipe and Filter",
+      "Call-Return",
+      "Client-Server",
+      "Object-Oriented"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come possiamo calcolare la “bontà” (adeguatezza) di una test suite?",
+    "answers": [
+      "Derivandola dalla Power. Più è alta la power, maggiore è l'adeguatezza",
+      "Misurando la copertura della test suite rispetto al SUT (System Under Test)",
+      "Dal numero di fault trovati",
+      "Dal numero di failure trovati"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il modello Waterfall (a cascata):",
+    "answers": [
+      "Non ha pregi ma solo difetti e per questo motivo non viene utilizzato nell’industria",
+      "È l’evoluzione diretta del V-model",
+      "Ha pregi e difetti. Tra i pregi: è lineare, rigido, monolitico. Inoltre non esiste feedback tra le varie fasi, non esiste parallelismo che rischia di confondere gli sviluppatori ed esiste un’unica e certa data di consegna",
+      "Ha pregi e difetti. Un pregio è che pospone l’implementazione dopo avere capito i bisogni del cliente (obbiettivi)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Qual è lo scopo degli oggetti DAO o layer di persistenza?",
+    "answers": [
+      "Sostituire l’utilizzo di connettori a basi di dati quali ad esempio JDBC",
+      "Incapsulare in un livello software la comunicazione tra l’applicazione e il DBMS",
+      "Disaccoppiare la \"presentation logic\" dalla \"business logic\"",
+      "Generare automaticamente il codice di accesso ai dati a partire dal relativo diagramma ER"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In un contesto di sviluppo Agile (ad esempio Extreme Programming), come avviene la pianificazione dei rilasci (Release Planning)?",
+    "answers": [
+      "Gli sviluppatori producono le user stories, danno una stima in termini di \"points\" per ogni user story e fissano un tempo di consegna (TIME). Dopo aver dialogato con i customer, gli sviluppatori definiscono la release selezionando le user stories più difficili da implementare",
+      "I customer producono le user stories (aiutati dagli sviluppatori), gli sviluppatori danno una stima in termini di \"points\" per ogni user story, fissano un tempo di consegna (TIME) e un totale in points di user stories (TOT) da sviluppare in tale tempo. Alla fine i customer definiscono la release selezionando le user stories più importanti per il loro business, totalizzando il valore TOT",
+      "I customer producono le user stories, danno una stima in termini di \"points\" per ogni user story e fissano un tempo in cui vorrebbero avere il sistema funzionante (TIME). Gli sviluppatori fissano un totale in points di user stories (TOT) da sviluppare in tale tempo. Alla fine i customer definiscono la release selezionando le user stories meno importanti per il loro business, totalizzando il valore TOT",
+      "Gli sviluppatori producono le user stories (aiutati dai customer), danno una stima in termini di \"points\" per ogni user story, fissano un tempo di consegna (TIME) e un totale in points di user stories (TOT) da sviluppare in tale tempo. Alla fine i customer definiscono la release selezionando le user stories più importanti per il loro business, totalizzando il valore TOT-1"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che tipo di diagramma è rappresentato nella figura seguente?",
+    "answers": [
+      "State diagram",
+      "Class diagram",
+      "Activity diagram",
+      "Non è un diagramma UML"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa si intende con il termine “legacy system”?",
+    "answers": [
+      "Un sistema non più moderno ma ben documentato e semplicemente rimpiazzabile con un altro sistema con le stesse funzionalità",
+      "Un sistema moderno progettato seguendo le “best practice” di progettazione e codifica riconosciute internazionalmente",
+      "Un sistema la cui struttura si è deteriorata con il tempo e per il quale l’attività di manutenzione è diventata prevalente su ogni altra",
+      "Un sistema “vecchio” (cioè implementato diversi anni fa con linguaggi ormai obsoleti), mantenuto in vita per lungo tempo, ma con una documentazione allineata con il codice e perfettamente comprensibile"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa si intende con verificabilità di un requisito software?",
+    "answers": [
+      "Ogni funzionalità del sistema deve poter essere fatta risalire a dei requisiti in modo semplice",
+      "I requisiti devono essere espressi in modo tale da essere testabili (es. \"immediatamente\" deve diventare \"in ... secondi\")",
+      "Ogni requisito deve avere solo un'interpretazione univoca (cioè non dovrebbe essere ambiguo)",
+      "I requisiti devono essere espressi in modo tale da non essere contradditori"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti frasi è corretta/vera?",
+    "answers": [
+      "Fault e failure sono sinonimi e si possono usare in modo intercambiabile in un documento tecnico",
+      "JUnit viene utilizzato principalmente per integration e system testing",
+      "Lo scopo del software testing è mostrare la presenza di fault",
+      "Un fault in un programma porta alla manifestazione di un failure (prima o poi)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il refactoring è:",
+    "answers": [
+      "Il processo che migliora la struttura interna di un sistema software e contestualmente modifica alcuni requisiti funzionali del sistema",
+      "Il processo correttivo e di sviluppo che avviene dopo il rilascio del prodotto finale in un ambiente di produzione",
+      "Un procedimento utilizzato per individuare le carenze di correttezza, completezza e affidabilità delle componenti software in corso di sviluppo",
+      "Il processo che migliora la struttura interna di un sistema software senza alterarne il comportamento esterno"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "In che modo possiamo esprimere i vincoli (cioè le constraint) in un diagramma delle classi UML?",
+    "answers": [
+      "Unicamente utilizzando OCL",
+      "Indicandoli tra parentesi graffe attraverso il linguaggio naturale, un linguaggio di programmazione o OCL",
+      "Non serve un modo esplicito per aggiungere vincoli aggiuntivi: tutti i vincoli si possono esprimere mediante associazioni, attributi e generalizzazione",
+      "Non esiste una notazione specifica; l’unica regola è indicarli tra parentesi tonde"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Di che tipo è il seguente requisito software: \"La visualizzazione dell'estratto conto deve avvenire entro 4 secondi dalla sua richiesta\"?",
+    "answers": [
+      "Funzionale",
+      "Tecnologico",
+      "Non funzionale",
+      "Desiderabile"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale è il tipo di manutenzione a cui è dedicata la percentuale più significativa dell’attività di manutenzione di un sistema?",
+    "answers": [
+      "Correttiva (per “riparare” errori nel software)",
+      "Adattiva (per adattare il software a diversi ambienti)",
+      "Migliorativa (per aggiungere o modificare le funzionalità del sistema)",
+      "Preventiva (per prevenire problemi futuri)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "UML può essere utilizzato in tre modi diversi: abbozzo (sketch), progetto dettagliato (blueprint) e come linguaggio di programmazione. In questo contesto, quale delle seguenti affermazioni è falsa?",
+    "answers": [
+      "I progetti abbozzati sono deliberatamente incompleti e si concentrano solo sulle informazioni più importanti",
+      "I progetti abbozzati spesso riducono la programmazione in un’attività semplice e meccanica",
+      "Utilizzando strumenti (tool) sofisticati è possibile compilare un modello UML (debitamente arricchito di informazioni) direttamente in formato eseguibile",
+      "Un progetto dettagliato è rivolto innanzitutto alla completezza. L’approccio blueprint è ispirato alle altre branche dell’ingegneria dove i professionisti producono disegni tecnici che vengono poi passati alla fase di produzione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i seguenti è uno svantaggio dello sviluppo basato sulle componenti?",
+    "answers": [
+      "Aumenta la quantità di codice da sviluppare",
+      "Porta ad avere una documentazione scarsa e un’architettura software spesso complessa",
+      "Riduce la qualità del codice prodotto. Infatti, acquistando da terzi oppure utilizzando componenti open-source, non si ha la certezza che le componenti si comportino come prescritto nelle specifiche",
+      "I requisiti iniziali potrebbero differire da quelli che si possono soddisfare con le componenti trovate o acquistate. Quindi occorre negoziare con il cliente un cambiamento dei requisiti oppure sviluppare una o più componenti da zero"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come si chiama \"la pallina\" nel seguente diagramma UML e cosa rappresenta?",
+    "answers": [
+      "Socket e rappresenta il servizio richiesto",
+      "Lollipop e rappresenta l’interfaccia esposta/fornita da una classe",
+      "Stereotipo e rappresenta un’associazione qualificata",
+      "Non è un elemento/costrutto UML"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In qualità di project manager, quale tra i seguenti modelli di processo di sviluppo software utilizzeresti per progettare un sistema safety-critical medicale di radioterapia molto complesso ed affidabile avendo a disposizione 40 sviluppatori?",
+    "answers": [
+      "UML",
+      "Extreme Programming",
+      "Test Driven Development (TDD)",
+      "Unified Process"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Solitamente la convalida (o validazione) dei requisiti si effettua mediante formal peer reviewes. Un altro modo per effettuare la convalida dei requisiti è:",
+    "answers": [
+      "Utilizzare la tecnica del brainstorming",
+      "Chiedere a degli analisti (che non sono stati coinvolti nella stesura dei requisiti) di effettuare un’analisi dettagliata dei requisiti con lo scopo di identificare possibili aree di miglioramento",
+      "Scrivere dei casi di test a partire dai requisiti",
+      "Cercare eventuali requisiti contradditori (o in conflitto) ed identificare i missing requirements"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Qual è il significato di \"analisi dei trade-off\" nel contesto delle architetture software?",
+    "answers": [
+      "Valutare i vantaggi e svantaggi di una particolare architettura software tenendo in considerazione gli attributi o proprietà di qualità di sistema (es. Performance)",
+      "Verificare che l’architettura software scelta soddisfa i requisiti software",
+      "Analizzare l’architettura software con il fine di valutarne la tracciabilità con il codice",
+      "Valutare che l’architettura software sia conforme ai principi di buona progettazione/programmazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i diagrammi messi a disposizione da UML è il più indicato per rappresentare/descrivere/modellare un’operazione di una classe?",
+    "answers": [
+      "Activity diagram",
+      "Sequence diagram",
+      "State machine diagram",
+      "Operation specification diagram"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti architetture software trovi essere più adatta per sviluppare un IDE (integrated development environment) che fornisce anche un editor UML e un generatore di codice a partire dal modello UML?",
+    "answers": [
+      "Layered model",
+      "Repository model",
+      "Pipe and Filter model",
+      "Model View Controller model"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i design pattern visti a lezione è utilizzato spesso nello sviluppo di framework perché in grado di realizzare l’inversione di controllo?",
+    "answers": [
+      "State Pattern",
+      "Controller Pattern",
+      "Template Pattern",
+      "Façade Pattern"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Considerando i principi di buona progettazione (e programmazione), che problemi manifesta la strategia denominata FORZA BRUTA per implementare un ORM?",
+    "answers": [
+      "Accoppia fortemente le classi di dominio al DB e produce classi poco coese",
+      "Viola il principio di semplicità",
+      "Produce un alto Fan-in",
+      "Aumenta la metrica DIT (una delle metriche proposte da Chidamber & Kemerer nel contesto di software OO) sopra una soglia accettabile"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa ci fa capire questa figura?",
+    "answers": [
+      "Questa figura fa capire che: dividere il software in moduli piccoli fa diminuire il costo di integrazione dei moduli che lo compongono",
+      "Questa figura fa capire che: all’aumentare del costo di un software il numero dei moduli cresce",
+      "Questa figura fa capire che: dividere il software in moduli sempre più piccoli (infinite volte) fa diventare nullo il costo di sviluppo",
+      "Questa figura fa capire che: esiste un trade-off (rappresentato dalla regione di costo minimo M) tra il numero di volte che un problema viene decomposto (e quindi il software che lo risolve) e i costi di integrazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Data la seguente state machine UML, cosa accade dopo che viene scatenato l’evento \"e\"?",
+    "answers": [
+      "La macchina si troverà in S2",
+      "La macchina si troverà in modo non deterministico in S2 o S3",
+      "La macchina si troverà contemporaneamente in S2 e S3",
+      "Non può succedere perché tale configurazione (cioè: due transizioni con lo stesso evento e due condizioni diverse, entrambe vere) non è ammessa in una state machine UML"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come valuteresti questa porzione di Use Case Diagram?",
+    "answers": [
+      "Bene perché è stata applicata la best practice di scomposizione funzionale",
+      "Male perché la scomposizione funzionale è da evitare nel contesto degli Use Case Diagram",
+      "Bene perché il primo use case (ConduzioneBiblioteca) è molto astratto ed ingloba tutte le funzionalità degli use case inclusi",
+      "Male perché il numero di <<include>> totali nel diagramma è troppo alto"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Perché è molto importante a livello di requisiti stabilire in modo chiaro e preciso i limiti/confini del sistema software che si vuole costruire?",
+    "answers": [
+      "Per semplificare la fase di analisi dei requisiti e il testing del sistema",
+      "Perché in questo modo si evitano incomprensioni tra i vari stakeholder",
+      "Perché è provato che molti problemi a progetti software reali sono sorti proprio a causa di limiti/confini non definiti bene",
+      "Perché il modello dei casi d’uso prescrive di racchiudere i vari use case in un rettangolo che rappresenta i confini del sistema"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti è una delle cinque leggi sull’evoluzione del software di Lehman?",
+    "answers": [
+      "Refactoring continuo: un sistema deve essere rifattorizzato continuamente per prevenire il design decay/erosion",
+      "Costi in aumento: la manutenzione del software porta inevitabilmente a \"Software Monsters\" che fanno crescere i costi per tenere il sistema aggiornato e utile",
+      "Complessità in aumento: i cambiamenti complicano il sistema e la struttura si deteriora (a meno di non intervenire per evitarlo)",
+      "Working force: aggiungere forza lavoro ad un progetto software in ritardo, lo farà ritardare ancora di più"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Si supponga di dover testare un metodo in un linguaggio OO che prende in input la rappresentazione numerica dei mesi (dove 1 corrisponde a Gennaio, 2 a Febbraio, etc.). Quali input dovremmo selezionare per applicare correttamente il criterio boundary value analysis?",
+    "answers": [
+      "1 e 12",
+      "1, 6 e 12",
+      "0, 1, 12, 13",
+      "0, 1, 2, 11, 12, 13"
+    ],
+    "correct": null
+  },
+  {
+    "question": "È risaputo che sviluppare un sistema software di buona qualità è estremamente complesso. Tale complessità è da attribuire a varie ragioni, ma ci sono dei fattori che sono più importanti di altri. In particolare, durante il corso di Ingegneria del Software, è stato sottolineato spesso un fattore che in molti casi è la causa di un fallimento di un progetto:",
+    "answers": [
+      "La complessità intrinseca del problema. Spesso i sistemi software che devono essere prodotti risolvono problemi molto complessi (ad esempio sistemi di controllo di reattori nucleari)",
+      "Il fattore tecnologico. Esistono molti \"prodotti\" simili forniti da diversi vendor (ad esempio linguaggi di programmazione, framework, application server o DBMS) e scegliere quello adatto al proprio progetto è molto complesso",
+      "Il fattore umano. Gestione del personale, problemi di comunicazione tra gli stakeholder e gli analisti/sviluppatori, difficoltà a lavorare in gruppo",
+      "Il fattore economico, ovvero mancanza di liquidità durante lo sviluppo del progetto"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti affermazioni su UP (Unified Process) è falsa?",
+    "answers": [
+      "UP è un modello \"Use case driven\" (ovvero è guidato dagli Use Case)",
+      "UP incorpora molte idee del modello a spirale",
+      "UP è più propriamente uno schema di modello (ovvero va adattato alle diverse realtà aziendali con opportune personalizzazioni)",
+      "UP può essere usato con qualsiasi linguaggio di modellazione del software (cioè non necessariamente con UML)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Il seguente artefatto che si riferisce ad un sistema grafico in fase di sviluppo è un esempio di:",
+    "answers": [
+      "Requisito utente",
+      "Requisito di sistema",
+      "Caso d’uso (Use case)",
+      "User Story"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In un diagramma dei casi d’uso quale relazione utilizzeresti per rappresentare il fatto che il caso d’uso FindBook rappresenta una variante più specifica del caso d’uso FindProduct?",
+    "answers": [
+      "Inclusione (Include)",
+      "Generalizzazione/Specializzazione",
+      "Estensione (Extend)",
+      "Utilizzo (Use)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti architetture software viste durante il corso di Ingegneria del Software trovi essere più adatta per sviluppare un sistema di sorveglianza dei confini di una nazione composto da diversi nodi (ad es. nodo sensore terrestre, nodo veicolo, nodo radar, nodo centrale di acquisizione dati per registrazione dello storico)?",
+    "answers": [
+      "Broadcast model",
+      "Call-Return model",
+      "Layered model",
+      "Manager model"
+    ],
+    "correct": null
+  },
+  {
+    "question": "UML definisce una notazione (o meglio una famiglia di notazioni) e un meta-modello. Cosa definisce il meta-modello?",
+    "answers": [
+      "Come vengono rappresentati i concetti del linguaggio (ad es. classi e associazioni) all’interno dei vari diagrammi",
+      "Gli stereotipi usati in UML, i vincoli e le informazioni semantiche aggiuntive",
+      "La tipologia dei diagrammi mediante la relazione di specializzazione",
+      "I concetti stessi del linguaggio (ad esempio \"da cosa\" è composta una Classe)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è scorretta?",
+    "answers": [
+      "`objX` chiama l’operazione `drive()` di `Car`, `drive()` chiama `startEngine()`, `startEngine()` chiama `getKey()` e `insertKey()` in successione",
+      "`startEngine()` è un self-message",
+      "`drive()` è un’operazione della classe `ClassX`",
+      "`insertKey()` è un’operazione della classe `Car`"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Supponiamo di dover realizzare una piccola applicazione in grado di notificare l’utente attraverso l’apertura di un popup quando arriva una nuova mail sulla sua casella di posta elettronica. Quale tra i seguenti Design pattern ci potrebbe tornare utile?",
+    "answers": [
+      "Abstract factory",
+      "Adapter",
+      "Template method",
+      "Observer"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Si supponga di dover testare la seguente operazione `int classify(int side1, int side2, int side3)` che prende in input tre interi che rappresentano tre lati di un triangolo e che ritorna: 0 se il triangolo è scaleno, 1 se è equilatero, 2 se è isoscele, -1 se non è un triangolo. Quale tra le seguenti test suite soddisfa il criterio di equivalence partitioning (senza considerare negative testing)?",
+    "answers": [
+      "{(4,5,6), (3,3,4), (3,3,3), (a,b,c)}",
+      "{(4,5,6), (3,3,4), (3,3,3)}",
+      "{(4,5,6), (3,3,4), (3,3,3), (1,1,8)}"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i seguenti statements non fa parte del \"Agile manifesto\"?",
+    "answers": [
+      "Gli individui e le interazioni *più che* i processi e gli strumenti",
+      "I requisiti software *più che* il design di un sistema",
+      "La collaborazione col cliente *più che* la negoziazione dei contratti",
+      "Rispondere al cambiamento *più che* seguire un piano"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In che modo possiamo esprimere i vincoli (cioè le constraint) in un diagramma delle classi UML?",
+    "answers": [
+      "Unicamente utilizzando OCL",
+      "Indicandoli tra parentesi graffe attraverso il linguaggio naturale, un linguaggio di programmazione o OCL",
+      "Non serve un modo esplicito per aggiungere vincoli aggiuntivi: tutti i vincoli si possono esprimere mediante associazioni, attributi e generalizzazione",
+      "Non esiste una notazione specifica; l’unica regola è indicarli tra parentesi tonde"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale è il tipo di manutenzione a cui è dedicata la percentuale più significativa dell’attività di manutenzione di un sistema software?",
+    "answers": [
+      "Correttiva (per “riparare” errori nel software)",
+      "Adattiva (per adattare il software a diversi ambienti)",
+      "Migliorativa (per aggiungere o modificare le funzionalità del sistema)",
+      "Preventiva (per prevenire problemi futuri)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel seguente package diagram UML cosa non è normativo (o legale)?",
+    "answers": [
+      "La freccia tratteggiata",
+      "La nota posta a destra nel diagramma",
+      "La presenza degli attori (“omini stilizzati”)",
+      "Il nome dei package (non deve iniziare per una lettera maiuscola)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti frasi sul design by contract è falsa?",
+    "answers": [
+      "Migliora la documentazione",
+      "Aiuta nella scelta dell’architettura software",
+      "Guida il testing",
+      "Migliora la qualità del software prodotto"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra i seguenti è uno svantaggio dello sviluppo basato sulle componenti?",
+    "answers": [
+      "Aumenta la quantità di codice da sviluppare",
+      "Complica l’architettura software del sistema che si sta sviluppando",
+      "Riduce la qualità del codice prodotto (per esempio perché l’utilizzo di componenti open-source non garantisce la correttezza delle funzionalità offerte)",
+      "Spesso occorre negoziare con il cliente una modifica dei requisiti. In alternativa, occorre sviluppare una o più componenti \"from scratch\""
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti affermazioni sul Software testing è vera?",
+    "answers": [
+      "È solitamente possibile testare tutte le combinazioni di input/output per un sistema software. Tuttavia questa strategia non viene seguita per ragioni economiche",
+      "Il test esaustivo è, con sufficiente sforzo e strumenti adatti, adatto per tutto il software",
+      "Un test è chiamato \"negative\" quando si utilizzano input illegali con lo scopo di testare le eccezioni oppure sollevare dei failure",
+      "Lo scopo del testing è dimostrare l’assenza di difetti"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel contesto della persistenza, cosa esemplifica il seguente sequence diagram UML?",
+    "answers": [
+      "L’approccio chiamato DAO",
+      "L’approccio denominato “Brute force”",
+      "L’approccio relativo ad un Persistence framework",
+      "L’approccio TDD"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Supponiamo di avere a che fare con una classe `Client` che per realizzare una singola operazione deve accedere ad alcune classi molto differenti tra loro (chiamando i metodi: `metodo1`, `metodo2`, `metodo3` e `metodo4`). Durante un’operazione di refactoring, quale design pattern utilizzeresti per migliorare lo stato delle cose?",
+    "answers": [
+      "Façade",
+      "Adapter",
+      "Composite",
+      "Decorator"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "In qualità di project manager, quale tra i seguenti modelli di processo utilizzeresti per progettare un sistema safety-critical di monitoraggio pazienti in un ospedale che deve essere molto affidabile avendo a disposizione 40 sviluppatori?",
+    "answers": [
+      "Model Driven Development",
+      "Extreme Programming",
+      "Code and Fix",
+      "Unified Process"
+    ],
+    "correct": null
+  },
+  {
+    "question": "I vantaggi principali offerti da un persistence framework quali ad esempio Hibernate sono:",
+    "answers": [
+      "Possibilità di accedere a basi di dati legacy mal progettate",
+      "Accoppiamento diretto tra applicazione e DB (chi sviluppa l’applicazione deve conoscere bene i dettagli del DB)",
+      "Incremento delle prestazioni",
+      "Facilità nel cambiare la corrispondenza tra oggetti e DB, facilità di riuso e indipendenza dallo specifico DBMS"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti NON è una delle proprietà che dovrebbero caratterizzare i requisiti?",
+    "answers": [
+      "Verificabilità",
+      "Coesione",
+      "Consistenza",
+      "Realismo"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti strategie di test sceglieresti per testare una classe: (1) con complessità ciclomatica alta, (2) che realizza una funzionalità di business molto complessa,(3) che è stata sviluppata in un linguaggio che conosci molto bene (es. C#)?",
+    "answers": [
+      "Black box testing",
+      "System testing (o testing di sistema)",
+      "White box testing applicando il criterio branch coverage",
+      "White box testing applicando il criterio path coverage completo"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In UML quale è il modo più corretto per esprimere una relazione \"tutto-parti\" tra due classi?",
+    "answers": [
+      "Tramite una dipendenza",
+      "Tramite un’associazione",
+      "Tramite una relazione di ereditarietà",
+      "Tramite un’aggregazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Una componente che modifica dati interni ad un’altra componente è un esempio:",
+    "answers": [
+      "Accoppiamento forte",
+      "Accoppiamento debole",
+      "Bassa coesione",
+      "Alta coesione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è un code smell?",
+    "answers": [
+      "Un “indicatore” che qualcosa nel codice non va bene. Lo sviluppatore deciderà a posteriori se intervenire o no",
+      "Una “certezza” che qualcosa nel codice non va bene. Lo sviluppatore dovrà intervenire per sistemare il problema",
+      "Un sinonimo di “code clone”",
+      "Un errore che necessariamente si manifesta durante l’esecuzione del software"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Come si chiama il refactoring applicato nell’esempio seguente?",
+    "answers": [
+      "Move fields",
+      "Extract method",
+      "Extract class",
+      "Pull-up method"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Utilizzando il metodo di sviluppo Extreme Programming, di solito, come si produce il design di un’applicazione?",
+    "answers": [
+      "Si utilizza un UML modeller (ad esempio Visual Paradigm) e si progetta un blueprint (progetto dettagliato)",
+      "Si utilizza il metodo CRC (Class Responsibility Collaboration), che consiste nell’utilizzare dei foglietti adesivi sui quali si scrive il nome della classe, lo scopo e le collaborazioni con le altre classi",
+      "Il design viene prodotto avendo a disposizione il cliente (On-site Customer), per tutta la durata del progetto, tramite “User stories” (foglietti adesivi su cui si scrivono \"le intenzioni\" del cliente)",
+      "Il design viene descritto in UML utilizzando un approccio top-down fino ad ottenere un “modello eseguibile”. Successivamente il modello viene trasformato in codice tramite tecniche di MDD"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale modello di processo di sviluppo software evidenzia come le attività di testing sono collegate a quelle di analisi e progettazione?",
+    "answers": [
+      "Modello a cascata con feedback e iterazioni",
+      "V-model",
+      "Modello a spirale",
+      "UP (Unified Process)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In un diagramma dei casi d’uso quale relazione utilizzeresti per rappresentare il fatto che il caso d’uso FindDVD rappresenta una variante più specifica del caso d’uso FindProduct?",
+    "answers": [
+      "Inclusione (Include)",
+      "Generalizzazione/Specializzazione",
+      "Estensione (Extend)",
+      "Utilizzo (Use)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "La seguente state machine UML modella il ciclo di vita di un corso in un sistema universitario di registrazione studenti. Quando un corso può essere cancellato?",
+    "answers": [
+      "In ogni stato della state machine",
+      "Solo quando è ‘Full’",
+      "Solo quando è ‘Closed to Enrollment’",
+      "Sia quando è ‘Full’ che quando è ‘Open For Enrollment’"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In un sistema medio-grande quale tra i seguenti diagrammi UML è utilizzato per tenere sotto controllo la complessità strutturale del codice?",
+    "answers": [
+      "Package diagram",
+      "Deployment diagram",
+      "Class diagram",
+      "Interaction diagram"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Cosa esemplifica (ti fa venire in mente) la figura mostrata a lato?",
+    "answers": [
+      "Un’operazione di Reverse engineering",
+      "I cicli del Test Driven Development",
+      "Il processo di Re-engineering",
+      "Il ciclo di Restructuring"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Per ottenere branch coverage 100% del seguente control Flow Graph sono necessari almeno:",
+    "answers": [
+      "Due casi di test",
+      "Un caso di test",
+      "Tre casi di test",
+      "Quattro casi di test"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale refactoring visto a lezione si può applicare ad una porzione di codice avente la seguente struttura?",
+    "answers": [
+      "Pull up",
+      "Pull down",
+      "Move method",
+      "Replace Inheritance with Delegation"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Si supponga di dover decidere un sistema di persistenza per un sistema software dove \"data size\" e \"data complexity\" sono molto molto elevati. Basandoti solo su questa informazione quale tra le seguenti opzioni ti sembra essere la più adatta?",
+    "answers": [
+      "Serializzazione",
+      "DBMS NoSQL",
+      "ORDBMS",
+      "OODBMS"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quali tra i seguenti motivi di insuccesso di un progetto software si trovano nelle primissime posizioni nella lista stilata nello Standish Group?",
+    "answers": [
+      "Incompetenza tecnologica dello staff informatico",
+      "Carenze di risorse e carenza di gestione del settore IT",
+      "Mancato supporto dei manager",
+      "Incompletezza dei requisiti e mancato coinvolgimento degli utenti durante la fase di analisi"
+    ],
+    "correct": null
+  },
+  {
+    "question": "La seguente figura rappresenta l’architettura software di un’applicazione. A quale stile architetturale visto a lezione è conforme?",
+    "answers": [
+      "Pipe and Filter",
+      "Broadcast",
+      "Repository",
+      "Stratificato (Layered)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Questa figura vista a lezione rappresenta il processo di rilascio del metodo di sviluppo denominato Extreme Programming. Che cosa rappresentano i cubi i1, i2 e i3?",
+    "answers": [
+      "Rappresentano degli artefatti generici (ad esempio requisiti, codice, design, piani dei test) che vengono rilasciati al cliente",
+      "Rappresentano versioni di codice che vengono rilasciate ad un insieme di clienti selezionati per la fase di Beta-testing. Solo dopo questa fase il codice verrà rilasciato a tutti i clienti",
+      "Rappresentano versioni di codice funzionante (nel senso che può essere eseguito), via via sempre più complete, che vengono rilasciate al cliente",
+      "Rappresentano versioni di codice che vengono passate al gruppo di test per effettuare le fasi di validazione e verifica di sistema. Solo dopo questa fase il codice sarà rilasciato al cliente"
+    ],
+    "correct": null
+  },
+  {
+    "question": "È risaputo che sviluppare un sistema software di buona qualità è complesso. Tale complessità è da attribuire a varie ragioni, ma ci sono dei fattori che sono più importanti di altri. In particolare, durante il corso di Ingegneria del Software, è stato sottolineato spesso un fattore che in molti casi è la principale causa di fallimento di un progetto:",
+    "answers": [
+      "La complessità intrinseca del problema. Spesso i sistemi software che devono essere prodotti risolvono problemi molto complessi (ad esempio sistemi di controllo di reattori nucleari)",
+      "Il fattore tecnologico. Esistono molti \"prodotti\" simili forniti da diversi vendor (ad esempio linguaggi di programmazione, framework, application server) e scegliere quello adatto al proprio progetto è molto complesso",
+      "Il fattore umano. Gestione del personale, problemi di comunicazione tra gli stakeholder e gli analisti/sviluppatori, difficoltà a lavorare in gruppo",
+      "Il fattore economico, ovvero mancanza di liquidità durante lo sviluppo del progetto"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è scorretta?",
+    "answers": [
+      "`objX` chiama l’operazione `drive()` di `Car`, a sua volta `drive()` chiama `startEngine()`, `startEngine()` chiama `getKey()` e `insertKey()` in successione",
+      "`getKey()` è un self-message",
+      "`drive()` è un’operazione della classe `ClassX`",
+      "`insertKey()` è chiamata all’interno dell’operazione `startEngine()`"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel seguente component diagram UML \"preso da internet\" cosa non è corretto rispetto a quanto visto a lezione?",
+    "answers": [
+      "Gli archi che mostrano dipendenza tra componenti sono mostrati con una freccia tratteggiata ed invece dovrebbero essere continui",
+      "I due lollipop (`spellchecker` e `synonymfinder`) sono interfacce esposte e quindi dovrebbero essere rappresentate con i socket",
+      "Gli stereotipi (ovvero lo specificare il tipo di componente tra parentesi angolari `<< >>`) non sono ammessi per le componenti software",
+      "In questo diagramma sono rappresentati gli artefatti al posto delle componenti. Le componenti sono entità logiche che sono realizzate da artefatti (che sono invece entità fisiche)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Supponiamo di dover implementare un software per il gioco del monopoli con le classi: `Monopoli`, `Scacchiera`, `Casella`, `Pezzo` e `Giocatore`. Chi dovrebbe creare un oggetto di tipo `Casella`?",
+    "answers": [
+      "La classe `Monopoli`",
+      "La classe `Scacchiera`",
+      "La classe `Casella`",
+      "La classe `Pezzo`"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quando viene comodo utilizzare il seguente design pattern?",
+    "answers": [
+      "Quando si vuole convertire l’interfaccia di una classe in un’altra interfaccia che il cliente si aspetta",
+      "Quando si vogliono introdurre strategie per la gestione della memoria per migliorare le prestazioni (es. Caching)",
+      "Quando si vogliono aggiungere facilmente nuovi prodotti (ad esempio `ProductC`)",
+      "Quando si vogliono creare famiglie di prodotti (oggetti connessi o dipendenti tra loro), in modo che non ci sia necessità da parte dei client di specificare le classi concrete dei prodotti all’interno del proprio codice"
+    ],
+    "correct": null
+  },
+  {
+    "question": "I metodi (o approcci) di sviluppo plan-driven vengono usati in certi contesti (ad esempio quando abbiamo a che fare con un grosso sistema safety-critical) mentre i metodi agili sono più adatti in altri (ad esempio con sistemi e team piccoli, clienti e utenti disponibili, ambiente e requisiti volatili). Come ci si deve regolare se dobbiamo affrontare un progetto che possiede dei fattori \"contrastanti\"?",
+    "answers": [
+      "È preferibile andare sul sicuro ed utilizzare un metodo plan-driven quale ad esempio UP",
+      "Siccome è noto che i metodi agili (ad esempio XP) sono i più usati e sono decisamente più performanti, è meglio utilizzare un metodo agile anche nei casi dubbi",
+      "Bisogna cercare di bilanciare il rigore/disciplina dei metodi plan-driven con la flessibilità dei metodi agili",
+      "In questi casi rari è consigliato utilizzare il metodo di sviluppo \"code & fix\""
+    ],
+    "correct": null
+  },
+  {
+    "question": "Si supponga un sistema per la gestione dei pagamenti dove `POST` è una classe usata per gestire nuovi acquisti con l’operazione `makePayment()`. Guardando il diagramma quale tra le seguenti affermazioni è l’unica vera?",
+    "answers": [
+      "La classe `POST` è accoppiata fortemente (`strong coupled`) con le altre classi",
+      "Il diagramma UML in questione è un object diagram",
+      "`makePayment()` crea un’istanza di `Payment` chiamata `p` e successivamente chiede al reparto vendite (`Sale`) di aggiungere il pagamento `p`",
+      "La prima chiamata dell’operazione `makePayment()` (identificata con `1:`) crea un’istanza di `Payment` chiamata `p`. La seconda chiamata di `makePayment()` (identificata con `2:`) chiede al reparto vendite (`Sale`) di aggiungere il pagamento `p`"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa è la Textual Analysis (o analisi del testo) nel contesto dell’ingegneria del Software?",
+    "answers": [
+      "È la maniera a cui ci si riferisce all’uso dell’elaborazione del linguaggio naturale, analisi testuale e linguistica computazionale per identificare ed estrarre informazioni soggettive da diverse fonti",
+      "È un processo utilizzato per analizzare il dominio di un Sistema (system domain). Aiuta ad identificare le classi, gli use case e gli attori a partire dalla descrizione del problema data in forma testuale",
+      "È un insieme ampio ed eterogeneo di tecniche manuali o assistite da computer di interpretazione contestualizzata di documenti provenienti da processi di comunicazione in senso proprio (testi) o di significazione (tracce e manufatti), aventi come obiettivo finale la produzione di inferenze valide e attendibili"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Che cosa potrebbe esemplificare la seguente figura?",
+    "answers": [
+      "Una lista di linguaggi di programmazione",
+      "La migrazione di un software su diversi nodi computazionali",
+      "Il metodo di sviluppo agile programming (programmazione agile)",
+      "L’applicazione del model driven development (MDD)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale, tra i seguenti, non è un requisito funzionale?",
+    "answers": [
+      "La nuova pagina Web deve essere usabile in modo identico a quella della versione precedente del sito Web",
+      "È richiesto che l'utente si autentichi inserendo username e due tipologie diverse di password",
+      "Il sistema deve permettere di visualizzare il contenuto della pagina sia in italiano che in inglese",
+      "Come per la versione precedente del software, il sistema deve permettere la ricerca di utenti per data di nascita"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti non è un vantaggio dell'applicazione del Design Pattern Facade?",
+    "answers": [
+      "Realizza inversione del flusso di controllo",
+      "Nasconde al cliente le componenti (complesse) del sottosistema",
+      "Riduce la dipendenza tra client e sottosistema",
+      "Non esclude l'uso diretto del sottosistema. Il Client può comunque utilizzare direttamente il sottosistema se lo ritiene necessario"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale dei seguenti punti/voci NON necessita della collaborazione tra gli sviluppatori/analisti software ed i clienti?",
+    "answers": [
+      "L'interfaccia utente",
+      "I requisiti del sistema",
+      "Decidere quale processo di sviluppo utilizzare",
+      "Decidere quale tecnica di testing applicare a livello di unità (es. white o black box)"
+    ],
+    "correct": null
+  },
+  {
+    "question": "In quale caso è possibile applicare il refactoring chiamato 'Separate Domain from Presentation'?",
+    "answers": [
+      "Quando siamo in presenza di un modulo che contiene una condizione che sceglie differenti comportamenti a seconda del tipo di una variabile di presentazione",
+      "Quando siamo in presenza di un modulo (chiamato anche God/Blob) che esegue troppi compiti (bassa coesione) ed è molto accoppiato con gli altri moduli (alto accoppiamento)",
+      "Quando siamo in presenza di un modulo che gestisce la business logic e la persistenza dei dati",
+      "Quando siamo in presenza di un modulo che gestisce l'interfaccia grafica e parte della logica di business dell'applicazione"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Quale tra le seguenti frasi è corretta?",
+    "answers": [
+      "Un modello è conforme al suo metamodello alla stessa maniera in cui un programma per computer è conforme alla grammatica del linguaggio di programmazione in cui è scritto",
+      "Le istanze di un modello sono dei meta-modelli",
+      "I progettisti software che utilizzano UML nelle proprie aziende durante la fase di sviluppo di un sistema software creano solitamente dei meta-modelli"
+    ],
+    "correct": null
+  },
+  {
+    "question": "Nel contesto dello stile architetturale a micro-servizi, quale è la funzione dell'API Gateway?",
+    "answers": [
+      "Permette la comunicazione punto a punto dei vari micro-servizi che costituiscono il sistema SW",
+      "Permette la comunicazione tra i micro-servizi e il DB centrale del sistema SW",
+      "È una sorta di Observer che vigila sul corretto funzionamento del sistema SW composto da diversi nodi",
+      "È una sorta di Facade, che espone un-interfaccia verso il client. In questo modo il client chiama un unico servizio e l'API Gateway lo realizza chiamando i vari micro-service necessari e restituisce l'output al cliente"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "Di solito usare componenti SW a grana grossa in un sistema SW:",
+    "answers": [
+      "Migliora la performance ma riduce la maintainability",
+      "Migliora performance e maintainability",
+      "Migliora la maintainability",
+      "Riduce la performance"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "In base al class diagram 'Rubrica e Contatto', quale sequence diagram è corretto per modellare la creazione di un nuovo contatto in rubrica e l'inserimento del relativo numero di telefono?",
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale opzione è più indicata per un Project Manager con un team di tre sviluppatori per un sistema SW medicale safety-critical con requisiti instabili?",
+    "answers": [
+      "Applicare un metodo di sviluppo prescrittivo con molte milestone e code review frequenti",
+      "Applicare Extreme Programming",
+      "Utilizzare un metodo di sviluppo bilanciato tra agilità e disciplina",
+      "Seguire le prescrizioni date nel metodo di sviluppo denominato Unified Process"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Secondo Fred Brooks, quale aspetto rappresenta il \"silver bullet\" nello sviluppo software?",
+    "answers": [
+      "L'adozione di una metodologia agile su larga scala efficace (es. DevOps)",
+      "L'uso di strumenti CASE avanzati",
+      "Non esiste il \"silver bullet\" nello sviluppo software",
+      "La completa automazione del testing"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Nel contesto del pattern architetturale MVC, quale affermazione descrive meglio la responsabilità del Controller?",
+    "answers": [
+      "Si occupa di aggiornare il Model e la View",
+      "Si occupa di visualizzare i dati provenienti dal Model",
+      "Si occupa di gestire i dati del Model e aggiornarli nel Database",
+      "Si occupa di controllare la visualizzazione di widget e dati nella View"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quali attività compongono il processo di Requirements Engineering?",
+    "answers": [
+      "Elicitation, Analysis, Specification, Validation, Management",
+      "Elaboration, Specification, Testing, Documentation",
+      "Extraction, Analysis, Specification, Testing, Management",
+      "Elicitation, Elaboration, Specification, Validation, Documentation"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Gli Screen mockup sono di solito utilizzati per:",
+    "answers": [
+      "Chiarire il comportamento di alcuni passi mediante un disegno/abbozzo della GUI negli use case",
+      "Specificare quale sarà l’effettiva GUI del sistema una volta realizzato",
+      "Differenziare i requisiti utente da quelli di sistema",
+      "Chiarire il ruolo degli attori negli use case diagram"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale stile architetturale è più adatto per un sistema gestionale con GUI?",
+    "answers": [
+      "Pipe and Filter",
+      "Stratificato (Layered)",
+      "Manager Model",
+      "Client-Server"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Quale libro di Ingegneria del Software consiglieresti?",
+    "answers": [
+      "Ian Sommerville",
+      "Martin Fowler",
+      "Kent Beck",
+      "Erich Gamma"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale tra le seguenti istruzioni Java è ERRATA se ClassB eredita da ClassA?",
+    "answers": [
+      "`ClassA b = new ClassA();`",
+      "`ClassB a = new ClassB();`",
+      "`ClassA a = new ClassB();`",
+      "`ClassB b = new ClassA();`"
+    ],
+    "correct": 4
+  },
+  {
+    "question": "In un sistema basato su microservizi, quale dei seguenti è un vantaggio principale?",
+    "answers": [
+      "Facilità di scalabilità indipendente dei servizi",
+      "Aumento della dipendenza tra i componenti",
+      "Minore complessità di distribuzione di messaggi tra le varie componenti software",
+      "Utilizzo di un unico linguaggio di programmazione per tutti i microservizi"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Qual è il primo passo nella creazione di un nuovo sistema software?",
+    "answers": [
+      "Creare una matrice di tracciabilità",
+      "Identificare/comprendere i requisiti degli stakeholder e stabilire i limiti del sistema",
+      "Definire i requisiti funzionali e analizzare la loro fattibilità",
+      "Scrivere i casi d'uso"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Quale dei seguenti diagrammi UML è più appropriato per rappresentare la distribuzione fisica dei componenti di un sistema software su nodi?",
+    "answers": [
+      "Class diagram",
+      "Deployment diagram",
+      "Activity diagram",
+      "Component Diagram"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Quale dei seguenti è un vantaggio dell'uso del principio di incapsulamento nelle classi?",
+    "answers": [
+      "Permette di nascondere i dettagli dell'implementazione",
+      "Aumenta la complessità ciclomatica del codice",
+      "Elimina la necessità di utilizzare l'ereditarietà",
+      "Riduce il numero di classi necessarie"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale dei seguenti modelli di sviluppo software enfatizza un approccio  a fasi sequenziali, dove ciascuna fase deve essere completata prima di passare alla successiva senza avere il bisogno di rieseguisenza iterazioni?",
+    "answers": [
+      "Modello a cascata",
+      "Modello a spirale",
+      "Modello Incrementale",
+      "Modello a cascata con feedback e iterazioni"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale dei seguenti metodi di persistenza permette di salvare e successivamente ricreare uno stato identico di un oggetto?",
+    "answers": [
+      "Mapping Object-Relational",
+      "DAO (Data Access Object)",
+      "Serializzazione",
+      "Uso di framework di persistenza"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Che cosa è lo STANDISH GROUP?",
+    "answers": [
+      "Un'azienda conosciuta per i report riguardanti i progetti (project management)",
+      "Un consorzio di aziende che ha creato lo standard ISO/IEC/IEEE 29119 Software Testing",
+      "Un consorzio creato nel 1989 con l'obiettivo di analizzare il successo e il fallimento dei progetti software",
+      "Una delle più grandi aziende di software per fatturato"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Perché l'Ariane V è esploso in volo nel suo viaggio inaugurale?",
+    "answers": [
+      "A causa di una collisione con un asteroide",
+      "A causa di un errore hardware nel sistema di controllo del razzo",
+      "Per un \"arithmetic overflow\" (tentativo di memorizzare un valore floating point a 64-bit in un intero a 16-bit)",
+      "Per una condizione anomala nella gestione dei thread di esecuzione"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Quale tra queste descrizioni si avvicina di più alla definizione di regression testing?",
+    "answers": [
+      "Un tipo di test che verifica il trasferimento dei dati tra moduli",
+      "Un tipo di testing che verifica il corretto funzionamento dopo modifiche o correzioni",
+      "Un test per determinare se il software soddisfa i requisiti prestazionali",
+      "Parte del performance testing che aumenta il carico sul sistema"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Qual è lo scopo principale di un diagramma delle componenti UML?",
+    "answers": [
+      "Modellare il flusso di controllo all'interno di un sistema software",
+      "Mostrare le componenti software e le loro relazioni/dipendenze",
+      "Modellare le classi OO che costituiscono il sistema",
+      "Specificare la struttura modulare del sistema"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Nel contesto di uno Use Case Diagram UML, quale relazione può essere applicata sia tra attori che tra casi d'uso?",
+    "answers": [
+      "Uso",
+      "Inclusione",
+      "Generalizzazione",
+      "Estensione"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Dato il metodo `public void withdraw(double amount) { ... }`, quale specifica By Contract (pre o post-condizioni) è più corretta?",
+    "answers": [
+      "`@pre amount > 0 e @post balance = balance - amount`",
+      "`@pre amount > 0 e @post balance = balance@pre - amount`",
+      "`@post balance = balance@pre - amount`",
+      "`@pre amount > 0 e @post = TRUE`"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "In Extreme Programming, quale indicatore viene usato per misurare il progresso nello sviluppo software?",
+    "answers": [
+      "La percentuale di User Stories implementate",
+      "La percentuale di casi di test di unità superati",
+      "Non viene usato nessun indicatore perché è un metodo agile",
+      "La percentuale di casi di test di accettazione superati"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Cosa significa prioritizzazione dei requisiti?",
+    "answers": [
+      "Scrivere casi di test basati sui requisiti",
+      "Dare un ordine ai requisiti per decidere quali implementare",
+      "Analizzare i requisiti per stabilirne fattibilità e correttezza",
+      "Suddividere i requisiti in necessari, desiderabili e possibili"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Quale design pattern prenderesti in considerazione per un sistema di broadcasting?",
+    "answers": [
+      "Observer Design Pattern",
+      "Facade Design Pattern",
+      "State Design Pattern",
+      "Template Method Design Pattern"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Quale affermazione sul processo di sviluppo UP (Unified Process) è corretta?",
+    "answers": [
+      "Lo UP è un metodo di sviluppo agile",
+      "Lo UP parte dall'alto e non considera il concetto di rischio",
+      "Lo UP è \"Use-case driven\", \"Architecture centric\", iterativo e incrementale",
+      "Lo UP concentra gran parte delle sue attività sulla fase di implementazione"
+    ],
+    "correct": 3
+  }
+]
