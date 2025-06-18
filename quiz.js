@@ -6,6 +6,10 @@ function generateQuiz(quizData) {
     div.dataset.correct = q.correct;
 
     let html = `<p>${index + 1}. ${q.question}</p>`;
+    if (q.image) {
+      html += `<img src="${q.image}" alt="Immagine domanda" style="max-width: 100%; height: auto; margin: 10px 0;">`;
+    }
+
     q.answers.forEach((ans, i) => {
       html += `<label><input type="radio" name="q${index + 1}" value="${i + 1}"> ${ans}</label><br>`;
     });
@@ -76,7 +80,7 @@ function checkAllAnswers() {
 }
 
 // === Caricamento dati da catalog.json ===
-fetch('catalog.json')
+fetch('./json/catalog.json')
   .then(response => response.json())
   .then(data => {
     generateQuiz(data);

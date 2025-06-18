@@ -307,7 +307,7 @@
       "Sovrastima delle capacità del team",
       "Eccessiva documentazione senza automatismi di aggiornamento"
     ],
-    "correct": null
+    "correct": 2
   },
   {
     "question": "In quale diagramma UML può essere usato il seguente simbolo?",
@@ -317,7 +317,7 @@
       "Component Diagram",
       "Sequence Diagram"
     ],
-    "correct": null
+    "correct": 1
   },
   {
     "question": "Secondo Fred Brooks, quale aspetto tra i seguenti rappresenta il \"silver bullet\" nello sviluppo software?",
@@ -327,7 +327,7 @@
       "Non esiste il \"silver bullet\" nello sviluppo software",
       "La completa automazione del testing"
     ],
-    "correct": null
+    "correct": 3
   },
   {
     "question": "Che cosa rappresenta il concetto di debito tecnico nello sviluppo software?",
@@ -337,7 +337,7 @@
       "L'accumulo di errori runtime durante l'integrazione di più moduli",
       "Una tecnica di sviluppo per simulare sistemi finanziari nei software"
     ],
-    "correct": null
+    "correct": 2
   },
   {
     "question": "Cosa si intende con code smell?",
@@ -347,7 +347,7 @@
       "Un design pattern specifico per la gestione della leggibilità e manutenibilità del codice",
       "Una funzionalità presente nei principali debugger per trovare problemi nel codice"
     ],
-    "correct": null
+    "correct": 2
   },
   {
     "question": "Quale tra le seguenti affermazioni relativamente al framework JUnit 5 è falsa?",
@@ -357,7 +357,7 @@
       "Richiede necessariamente l'estensione della classe TestCase",
       "Permette di rilevare errori a runtime oltre a problemi su asserzioni"
     ],
-    "correct": null
+    "correct": 3
   },
   {
     "question": "Quale code smell NON è presente nella classe AbstractCollection rappresentata a lato?",
@@ -367,7 +367,7 @@
       "Too many If statements",
       "Message chains"
     ],
-    "correct": 1
+    "correct": 4
   },
   {
     "question": "Nel contesto del pattern architetturale MVC (Model-View-Controller), quale delle seguenti affermazioni descrive meglio la responsabilità del Controller?",
@@ -377,7 +377,7 @@
       "Si occupa di gestire i dati del Model e aggiornarli nel Database",
       "Si occupa di controllare la visualizzazione di widget e dati nella View"
     ],
-    "correct": null
+    "correct": 1
   },
   {
     "question": "Cosa possiamo dire delle due classi Engine e Car nella figura mostrata a destra?",
@@ -397,7 +397,8 @@
       "C",
       "D"
     ],
-    "correct": null
+    "correct": 2,
+    "image": "img/"
   },
   {
     "question": "In che modo possiamo esprimere i vincoli (cioè le constraint) in un diagramma delle classi UML?",
@@ -1737,7 +1738,8 @@
       "Questa figura fa capire che: dividere il software in moduli sempre più piccoli (infinite volte) fa diventare nullo il costo di sviluppo",
       "Questa figura fa capire che: esiste un trade-off (rappresentato dalla regione di costo minimo M) tra il numero di volte che un problema viene decomposto (e quindi il software che lo risolve) e i costi di integrazione"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/174.png"
   },
   {
     "question": "Data la seguente state machine UML, cosa accade dopo che viene scatenato l’evento \"e\"?",
@@ -1747,7 +1749,9 @@
       "La macchina si troverà contemporaneamente in S2 e S3",
       "Non può succedere perché tale configurazione (cioè: due transizioni con lo stesso evento e due condizioni diverse, entrambe vere) non è ammessa in una state machine UML"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/175.png"
+
   },
   {
     "question": "Come valuteresti questa porzione di Use Case Diagram?",
@@ -1757,7 +1761,8 @@
       "Bene perché il primo use case (ConduzioneBiblioteca) è molto astratto ed ingloba tutte le funzionalità degli use case inclusi",
       "Male perché il numero di <<include>> totali nel diagramma è troppo alto"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/176.png"
   },
   {
     "question": "Perché è molto importante a livello di requisiti stabilire in modo chiaro e preciso i limiti/confini del sistema software che si vuole costruire?",
@@ -1817,7 +1822,8 @@
       "Caso d’uso (Use case)",
       "User Story"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/182.png"
   },
   {
     "question": "In un diagramma dei casi d’uso quale relazione utilizzeresti per rappresentare il fatto che il caso d’uso FindBook rappresenta una variante più specifica del caso d’uso FindProduct?",
@@ -1857,7 +1863,8 @@
       "`drive()` è un’operazione della classe `ClassX`",
       "`insertKey()` è un’operazione della classe `Car`"
     ],
-    "correct": null
+    "correct": null,
+        "image": "img/186.png"
   },
   {
     "question": "Supponiamo di dover realizzare una piccola applicazione in grado di notificare l’utente attraverso l’apertura di un popup quando arriva una nuova mail sulla sua casella di posta elettronica. Quale tra i seguenti Design pattern ci potrebbe tornare utile?",
@@ -1916,7 +1923,9 @@
       "La presenza degli attori (“omini stilizzati”)",
       "Il nome dei package (non deve iniziare per una lettera maiuscola)"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/192.png"
+
   },
   {
     "question": "Quale delle seguenti frasi sul design by contract è falsa?",
@@ -1956,7 +1965,9 @@
       "L’approccio relativo ad un Persistence framework",
       "L’approccio TDD"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/196.png"
+
   },
   {
     "question": "Supponiamo di avere a che fare con una classe `Client` che per realizzare una singola operazione deve accedere ad alcune classi molto differenti tra loro (chiamando i metodi: `metodo1`, `metodo2`, `metodo3` e `metodo4`). Durante un’operazione di refactoring, quale design pattern utilizzeresti per migliorare lo stato delle cose?",
@@ -1966,7 +1977,8 @@
       "Composite",
       "Decorator"
     ],
-    "correct": 2
+    "correct": 1,
+    "image": "img/197.png"
   },
   {
     "question": "In qualità di project manager, quale tra i seguenti modelli di processo utilizzeresti per progettare un sistema safety-critical di monitoraggio pazienti in un ospedale che deve essere molto affidabile avendo a disposizione 40 sviluppatori?",
@@ -2046,7 +2058,8 @@
       "Extract class",
       "Pull-up method"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/205.png"
   },
   {
     "question": "Utilizzando il metodo di sviluppo Extreme Programming, di solito, come si produce il design di un’applicazione?",
@@ -2086,7 +2099,8 @@
       "Solo quando è ‘Closed to Enrollment’",
       "Sia quando è ‘Full’ che quando è ‘Open For Enrollment’"
     ],
-    "correct": null
+    "correct": 3,
+    "image":"img/209.png"
   },
   {
     "question": "In un sistema medio-grande quale tra i seguenti diagrammi UML è utilizzato per tenere sotto controllo la complessità strutturale del codice?",
@@ -2106,7 +2120,8 @@
       "Il processo di Re-engineering",
       "Il ciclo di Restructuring"
     ],
-    "correct": null
+    "correct": 2,
+    "image":"img/211.png"
   },
   {
     "question": "Per ottenere branch coverage 100% del seguente control Flow Graph sono necessari almeno:",
@@ -2116,7 +2131,8 @@
       "Tre casi di test",
       "Quattro casi di test"
     ],
-    "correct": null
+    "correct": 1,
+    "image":"img/212.png"
   },
   {
     "question": "Quale refactoring visto a lezione si può applicare ad una porzione di codice avente la seguente struttura?",
@@ -2126,7 +2142,8 @@
       "Move method",
       "Replace Inheritance with Delegation"
     ],
-    "correct": null
+    "correct": null,
+    "image":"img/213.png"
   },
   {
     "question": "Si supponga di dover decidere un sistema di persistenza per un sistema software dove \"data size\" e \"data complexity\" sono molto molto elevati. Basandoti solo su questa informazione quale tra le seguenti opzioni ti sembra essere la più adatta?",
@@ -2156,7 +2173,8 @@
       "Repository",
       "Stratificato (Layered)"
     ],
-    "correct": null
+    "correct": 4,
+    "image":"img/216.png"
   },
   {
     "question": "Questa figura vista a lezione rappresenta il processo di rilascio del metodo di sviluppo denominato Extreme Programming. Che cosa rappresentano i cubi i1, i2 e i3?",
@@ -2166,7 +2184,8 @@
       "Rappresentano versioni di codice funzionante (nel senso che può essere eseguito), via via sempre più complete, che vengono rilasciate al cliente",
       "Rappresentano versioni di codice che vengono passate al gruppo di test per effettuare le fasi di validazione e verifica di sistema. Solo dopo questa fase il codice sarà rilasciato al cliente"
     ],
-    "correct": null
+    "correct": 3,
+    "image":"img/217.png"
   },
   {
     "question": "È risaputo che sviluppare un sistema software di buona qualità è complesso. Tale complessità è da attribuire a varie ragioni, ma ci sono dei fattori che sono più importanti di altri. In particolare, durante il corso di Ingegneria del Software, è stato sottolineato spesso un fattore che in molti casi è la principale causa di fallimento di un progetto:",
@@ -2186,7 +2205,8 @@
       "`drive()` è un’operazione della classe `ClassX`",
       "`insertKey()` è chiamata all’interno dell’operazione `startEngine()`"
     ],
-    "correct": null
+    "correct": null,
+    "image":"img/219.png"
   },
   {
     "question": "Nel seguente component diagram UML \"preso da internet\" cosa non è corretto rispetto a quanto visto a lezione?",
@@ -2196,7 +2216,8 @@
       "Gli stereotipi (ovvero lo specificare il tipo di componente tra parentesi angolari `<< >>`) non sono ammessi per le componenti software",
       "In questo diagramma sono rappresentati gli artefatti al posto delle componenti. Le componenti sono entità logiche che sono realizzate da artefatti (che sono invece entità fisiche)"
     ],
-    "correct": null
+    "correct": null,
+    "image":"img/220.png"
   },
   {
     "question": "Supponiamo di dover implementare un software per il gioco del monopoli con le classi: `Monopoli`, `Scacchiera`, `Casella`, `Pezzo` e `Giocatore`. Chi dovrebbe creare un oggetto di tipo `Casella`?",
@@ -2206,7 +2227,8 @@
       "La classe `Casella`",
       "La classe `Pezzo`"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/222.png"
   },
   {
     "question": "Quando viene comodo utilizzare il seguente design pattern?",
@@ -2236,7 +2258,8 @@
       "`makePayment()` crea un’istanza di `Payment` chiamata `p` e successivamente chiede al reparto vendite (`Sale`) di aggiungere il pagamento `p`",
       "La prima chiamata dell’operazione `makePayment()` (identificata con `1:`) crea un’istanza di `Payment` chiamata `p`. La seconda chiamata di `makePayment()` (identificata con `2:`) chiede al reparto vendite (`Sale`) di aggiungere il pagamento `p`"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/224.png"
   },
   {
     "question": "Che cosa è la Textual Analysis (o analisi del testo) nel contesto dell’ingegneria del Software?",
@@ -2255,7 +2278,8 @@
       "Il metodo di sviluppo agile programming (programmazione agile)",
       "L’applicazione del model driven development (MDD)"
     ],
-    "correct": null
+    "correct": null,
+    "image": "img/226.png"
   },
   {
     "question": "Quale, tra i seguenti, non è un requisito funzionale?",
@@ -2575,5 +2599,16 @@
       "Lo UP concentra gran parte delle sue attività sulla fase di implementazione"
     ],
     "correct": 3
+  },
+  {
+    "question": "Come si chiama il refactoring applicato nell’esempio seguente?",
+    "answers": [
+      "Extract method",
+      "Move fields",
+      "Change method",
+      "Create method"
+    ],
+    "correct": null,
+    "image": "img/259.png"
   }
 ]
