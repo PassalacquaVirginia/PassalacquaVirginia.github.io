@@ -7,7 +7,7 @@
       "Non serve un modo esplicito per aggiungere vincoli aggiuntivi: tutti i vincoli si possono esprimere mediante associazioni, attributi e generalizzazione",
       "Unicamente utilizzando il linguaggio OCL (Object Constraint Language)"
     ],
-    "correct": null
+    "correct": 2
   },
   {
     "question": "Cosa indica un alto Fan-out tra moduli (o componenti) di un sistema software?",
@@ -27,7 +27,7 @@
       "Un messaggio di tipo trovato descrive un metodo che effettua una ricerca di elementi in una collezione",
       "Si tratta di un tipo di diagramma usato per modellare aspetti statici"
     ],
-    "correct": null
+    "correct": 2
   },
   {
     "question": "Nel contesto dello stile architetturale a micro-servizi (micro-service), quale è la funzione dell'API Gateway?",
@@ -47,7 +47,7 @@
       "Il black box testing è una tecnica di testing particolarmente indicata per testare il software a livello di sistema (System level)",
       "Applicando Equivalence Partitioning nel modo classico su un range di valori [0, 100] si ottengono tre classi di equivalenza"
     ],
-    "correct": 2
+    "correct": 1
   },
   {
     "question": "Di solito usare componenti SW a grana grossa (Large-grain) in un sistema SW:",
@@ -57,7 +57,7 @@
       "Migliora la maintainability",
       "Migliora la performance ma riduce la maintainability"
     ],
-    "correct": null
+    "correct": 4
   },
   {
     "question": "In base al class diagram Rubrica e Contatto, quale sequence diagram è corretto per modellare la creazione di un nuovo contatto?",
@@ -67,17 +67,18 @@
       "C",
       "D"
     ],
-    "correct": null
+    "correct": 4,
+    "image":"img/7.png"
   },
   {
     "question": "Che cosa è l'OMG?",
     "answers": [
-      "Un consorzio di aziende (tra cui Microsoft, Digital e HP) che crea standard come CORBA, UML e XMI",
-      "Un'azienda statunitense nota per i report di project management e analisi di progetti",
-      "Una delle più grandi aziende informatiche mondiali per fatturato e capitalizzazione",
-      "Un consorzio di aziende che ha creato standard di software testing come ISO/IEC/IEEE 291119"
+      "UL'OMG è un consorzio di aziende (tra cui Microsoft, Digital e HP) avente l'obiettivo di creare standard. Gli standard più importanti che sono stati proposti riguardano l'architettura CORBA, il linguaggio di modellazione UML e lo standard XMI",
+      "L'OMG è un’azienda degli Stati Uniti d'America conosciuta per i report riguardanti i progetti (project management). In particolare l'OMG fornisce percentuali sul numero di progetti falliti, con handicap e di successo",
+      "L'OMG è una delle più importanti aziende d'informatica del mondo, una delle più grandi produttrici di software al mondo per fatturato, nonché anche una delle più grandi aziende per capitalizzazione azionaria, superiore ai 500 miliardi di dollari nel 2017",
+      "L'OMG è un consorzio di aziende degli Stati Uniti d'America e Canada al quale appartiene, per esempio, Microsoft e HP, che ha creato diversi standard nell'ambito del software testing, ad esempio lo standard ISO/IEC/IEEE 29119"
     ],
-    "correct": null
+    "correct": 1
   },
   {
     "question": "Quale refactoring è stato applicato al codice seguente?",
@@ -87,7 +88,8 @@
       "Replace Temp With Query",
       "Remove Cloned Code"
     ],
-    "correct": null
+    "correct": 3,
+    "image":"img/9.png"
   },
   {
     "question": "Quale delle seguenti opzioni è più indicata per un Project Manager che deve sviluppare un sistema SW medicale safety-critical con requisiti instabili?",
@@ -97,7 +99,7 @@
       "Utilizzare un metodo di sviluppo che bilancia agilità e disciplina",
       "Seguire il metodo di sviluppo denominato Unified Process"
     ],
-    "correct": null
+    "correct": 3
   },
   {
     "question": "Quali attività compongono il processo di Requirements Engineering (RE) e permettono la creazione e revisione del Requirements Document?",
@@ -107,7 +109,7 @@
       "Elicitation, Analysis, Specification, Validation, Management",
       "Extraction, Analysis, Specification, Testing, Management"
     ],
-    "correct": null
+    "correct": 3
   },
   {
     "question": "Quale relazione va definita tra i casi d’uso nel diagramma UML?",
