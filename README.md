@@ -1,7 +1,16 @@
 # README 
 
-## Come aggiungere domande
+## ⚖️ Licenza
 
+Questo progetto utilizza un sistema di doppia licenza per proteggere sia il software che i dati:
+
+- **Codice Sorgente (`.js`, `.py`, `.html`, `.css`):** È rilasciato sotto licenza [GNU AGPLv3](LICENSE). Se modifichi o utilizzi questo codice, devi rendere pubblico il codice sorgente modificato.
+- **Contenuti e Catalogo (`json/`, `img/`, `md/`):** Le domande, le immagini e i dati sono rilasciati sotto licenza [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE-CONTENT). Se aggiungi o modifichi domande al catalogo, devi rendere pubblico il catalogo aggiornato sotto questa stessa licenza.
+
+In sintesi: chiunque modifichi il quiz o le domande è obbligato a "restituire" le modifiche alla comunità rendendole pubbliche.
+
+
+## Come aggiungere domande
 È sufficiente aggiungerle nel formato corretto, nel json **catalog.json**
 
 Un medoto più semplice potrebbe essere seguire i seguenti passaggi: 
